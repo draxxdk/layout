@@ -4,8 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
     <link href="css/layout.css" rel="stylesheet" />
-    <!--<link rel="stylesheet/less" type="text/css" href="less/layout.less" />-->
-    <!--<script src="js/less-1.5.1.min.js"></script>-->
+    <!--<link rel="stylesheet/less" type="text/css" href="less/layout.less" />
+    <script src="js/less-1.5.1.min.js"></script>-->
 </head>
 <body>
     <div id="page" class="table">
@@ -134,6 +134,19 @@
                                     </table>
                                 </div>
                                 <hr />
+                                <div class="box red padding">
+                                    <h3>Known issues</h3>
+                                    <ul class="bullets">
+                                        <li>
+                                            Webkit (Google Chrome) has problems with images and overflow:auto.<br />
+                                            Images gets resized wrong and default browser scrollbar overlaps content instead of pushing it to the left.<br />
+                                            I have reported this bug on Google Chrome Help Forum <a href="https://productforums.google.com/forum/#!topic/chrome/Vrosp7NiKFw;context-place=forum/chrome" target="_blank">here</a> and made a post about it on CSS-Tricks <a href="https://css-tricks.com/forums/topic/how-do-you-fix-webkit-overflow-img-bug/" target="_blank">here</a>.<br />
+                                            I have added a webkit targetet CSS hack that sets overflow to scroll for webkit.<br />
+                                            When Google or someone else finds a solution for this, it will be fixed in this layout.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr />
                                 <div class="grid green padding dynamic">
                                     <h3>Dynamic width</h3>
                                     <div class="items-3" data-width="600">
@@ -197,29 +210,6 @@
                                     </div>
                                 </div>
                                 <hr />
-                                <div class="box red padding">
-                                    <h3>Known issues</h3>
-                                    <ul class="bullets">
-                                        <li>
-                                            Webkit (Google Chrome) has problems with images and overflow:auto.<br />
-                                            Images gets resized wrong and default browser scrollbar overlaps content instead of pushing it to the left.<br />
-                                            I have reported this bug on Google Chrome Help Forum <a href="https://productforums.google.com/forum/#!topic/chrome/Vrosp7NiKFw;context-place=forum/chrome" target="_blank">here</a> and made a post about it on CSS-Tricks <a href="https://css-tricks.com/forums/topic/how-do-you-fix-webkit-overflow-img-bug/" target="_blank">here</a>.<br />
-                                            I have added a webkit targetet CSS hack that sets overflow to scroll for webkit.<br />
-                                            When Google or someone else finds a solution for this, it will be fixed in this layout.
-                                        </li>
-                                    </ul>
-                                </div>
-                                <hr />
-                                <div class="box">
-                                    <h3>Upcomming features</h3>
-                                    <ul class="bullets">
-                                        <li>
-                                            Dynamic sidebar h2 + close button. Planning on making it grid based so h2 won't need padding-right based on close button width.
-                                            <!--No upcomming features are planned atm.-->
-                                        </li>
-                                    </ul>
-                                </div>
-                                <hr />
                                 <div class="box">
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper massa id erat blandit, et auctor nisl sollicitudin. Vivamus efficitur venenatis euismod. Vivamus accumsan, felis at ullamcorper sodales, quam purus egestas purus, non maximus nunc lorem quis enim. Morbi erat odio, dictum ut nisl nec, tempus ultrices tellus. Proin hendrerit at lectus quis mattis. Morbi tincidunt nec elit non lobortis. Pellentesque a sem porttitor, cursus neque a, dictum massa. Nunc tincidunt imperdiet ornare.<br />
@@ -231,6 +221,7 @@
                                         In a mi vitae neque viverra venenatis in egestas diam. Sed in consequat nisl. Sed mattis, tellus sagittis pellentesque semper, leo nisi lacinia erat, quis tincidunt erat massa quis lacus. Nulla vehicula porttitor ante, sit amet faucibus ipsum tempor sit amet. Cras pretium elit id nunc iaculis pellentesque. Sed ullamcorper sed massa porttitor aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur facilisis elit quis nisl rutrum, tempor vulputate lectus varius. Aliquam fermentum vulputate blandit. Sed sit amet semper tortor, fermentum congue tortor.
                                     </p>
                                 </div>
+                                <hr />
                                 <div class="box">
                                     <h3>Links</h3>
                                     <ul>
