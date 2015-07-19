@@ -74,7 +74,7 @@ Features
 <h2>Goals of the project</h2>
 <p>Overcome some of the common problems I have had with making website layouts in the past, like the following:</p>
 <ul>
-<li>Making div next to each other that has same height based on heighest one.</li>
+<li>Making div's next to each other have same height based on heighest one.</li>
 <li>Making div take up remaining browser window height / div container height</li>
 <li>Making div take up remaining browser window width / div container width</li>
 <li>Making completely dynamic grids that works and looks identical in all browser</li>
