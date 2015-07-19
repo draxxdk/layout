@@ -73,7 +73,7 @@ Features
 </table>
 
 Screenshots
-<img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image1.jpg" />
-<img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image2.jpg" />
-<img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image3.jpg" />
-<img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image4.jpg" />
+<img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image1.jpg" alt="All shown" />
+<img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image2.jpg" alt="Media query putting sidebars on top of center instead of besides it" />
+<img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image3.jpg" alt="Right sidebar and footer hidden" />
+<img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image4.jpg" alt="Center shown" />
