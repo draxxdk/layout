@@ -29,13 +29,12 @@ Features
                                             </tr>
                                             <tr>
                                                 <th>Grid</th>
-                                                <td>Simple and powerful grid. cells in a grid row all expands based on the heightest cell. To see it in action look at the images in #left and the gray boxes in #center.</td>
+                                                <td>Simple and powerful grid. cells in a grid row all expands based on the heightest cell.</td>
                                             </tr>
                                             <tr>
                                                 <th>Minimal jQuery</th>
                                                 <td>
-                                                    The layout uses jQuery to toggle different layout sections and to make advanced media queries for dynamic grids.<br />
-                                                    Look at the grid below and try resizing your browser width to see it change.
+                                                    The layout uses jQuery to toggle different layout sections and to make advanced media queries for dynamic grids.
                                                 </td>
                                             </tr>
                                             <tr>
