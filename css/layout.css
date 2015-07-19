@@ -1,5 +1,4 @@
 ﻿@import url('reset.css');
-@import url('theme/base-theme.css');
 @import url('theme/blue.css');
 @import url('theme/green.css');
 @import url('theme/orange.css');
@@ -22,7 +21,6 @@ p.center {
 }
 #page #top {
   display: block;
-  border-bottom: 2px solid black;
 }
 #page #top h1 {
   padding: 10px;
@@ -38,7 +36,6 @@ p.center {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: white;
   opacity: 0.9;
   z-index: 10;
   width: 100%;
@@ -74,12 +71,6 @@ p.center {
   width: 22px;
   height: 22px;
   border: none;
-  -webkit-border-radius: 13px;
-  -moz-border-radius: 13px;
-  border-radius: 13px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   color: transparent;
   background-position: left bottom;
 }
@@ -98,14 +89,10 @@ p.center {
 #page #middle hr {
   margin: 0 10px;
   border: 0;
-  height: 2px;
   display: block;
 }
 #page #middle #left {
   width: 200px;
-}
-#page #middle #left > .table {
-  border-right: 2px solid black;
 }
 #page #middle #center {
   width: 100%;
@@ -129,9 +116,6 @@ p.center {
 #page #middle #right {
   width: 200px;
 }
-#page #middle #right > .table {
-  border-left: 2px solid black;
-}
 #page #middle #left,
 #page #middle #right {
   max-width: 33.33333333333333%;
@@ -148,15 +132,18 @@ p.center {
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   #page #middle {
-    /* CSS Statements that only apply on webkit-based browsers (Chrome, Safari, etc.) */
+    /* CSS Statements that only apply on webkit-based browsers 
+                (Chrome, Safari, etc.) */
   }
   #page #middle .scroll {
-    /* this ensures that the scrollbar never overlaps  the content in the div with scroll */
+    /* this ensures that the scrollbar never overlaps 
+                    the content in the div with scroll */
     overflow-y: scroll !important;
   }
 }
 #page #middle .scroll {
   overflow-y: auto;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   width: 100%;
   height: 0;
@@ -211,13 +198,13 @@ p.center {
   padding: 10px;
 }
 #page #middle .scroll .grid {
-  border: 5px solid white;
+  border: 5px solid #ffffff;
   width: 100%;
 }
 #page #middle .scroll .grid > h3 {
-  border-top: 5px solid white;
-  border-left: 5px solid white;
-  border-right: 5px solid white;
+  border-top: 5px solid #ffffff;
+  border-left: 5px solid #ffffff;
+  border-right: 5px solid #ffffff;
 }
 #page #middle .scroll .grid > div {
   display: table;
@@ -228,7 +215,7 @@ p.center {
 #page #middle .scroll .grid > div > div {
   display: table-cell;
   vertical-align: top;
-  border: 5px solid white;
+  border: 5px solid #ffffff;
   overflow-x: auto;
 }
 #page #middle .scroll .grid > div > div > * + * {
@@ -290,20 +277,10 @@ p.center {
   padding: 10px;
   text-decoration: none;
   border: 0;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
   float: left;
 }
 #page #bottom {
   display: block;
-  border-top: 2px solid black;
 }
 #page #bottom p {
   padding: 10px;
@@ -355,18 +332,10 @@ p.center {
   #page #middle #left {
     left: 0;
   }
-  #page #middle #left > .table:before {
-    right: -6px;
-    background-image: linear-gradient(to right, #808080, transparent);
-  }
   #page #middle #right {
     right: 0;
   }
   #page #middle #right > .table {
     float: right;
-  }
-  #page #middle #right > .table:before {
-    left: -6px;
-    background-image: linear-gradient(to left, #808080, transparent);
   }
 }

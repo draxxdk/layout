@@ -1,10 +1,17 @@
 ﻿@import "mixins";
 @import "reset";
+/*@import "theme/base-theme-github";*/
+@import "theme/blue";
+@import "theme/green";
+@import "theme/orange";
+@import "theme/purple";
+@import "theme/red";
+@import "theme/yellow";
 
-@left-width: 200px; /* can also be set in percentage */
-@right-width: 200px; /* can also be set in percentage */
+
+@left-width: 200px;
+@right-width: 200px;
 @grid-border-width: 5px;
-@layout-border-width: 2px;
 
 h3,
 p,
@@ -26,7 +33,6 @@ p.center {
 
     #top {
         display: block;
-        border-bottom: @layout-border-width solid black;
 
         h1 {
             padding: 10px;
@@ -45,7 +51,6 @@ p.center {
                 bottom: 0;
                 left: 0;
                 right: 0;
-                background-color: white;
                 opacity: 0.9;
                 z-index: 10;
                 width: 100%;
@@ -84,7 +89,6 @@ p.center {
                 width: 22px;
                 height: 22px;
                 border: none;
-                .border-radius(13px);
                 color: transparent;
                 background-position: left bottom;
             }
@@ -107,16 +111,11 @@ p.center {
         hr {
             margin: 0 10px;
             border: 0;
-            height: 2px;
             display: block;
         }
 
         #left {
             width: @left-width;
-
-            > .table {
-                border-right: @layout-border-width solid black;
-            }
         }
 
         #center {
@@ -146,10 +145,6 @@ p.center {
 
         #right {
             width: @right-width;
-
-            > .table {
-                border-left: @layout-border-width solid black;
-            }
         }
 
         #left,
@@ -245,13 +240,13 @@ p.center {
             }
 
             .grid {
-                border: @grid-border-width solid white;
+                border: @grid-border-width solid #fff;
                 width: 100%;
 
                 > h3 {
-                    border-top: @grid-border-width solid white;
-                    border-left: @grid-border-width solid white;
-                    border-right: @grid-border-width solid white;
+                    border-top: @grid-border-width solid #fff;
+                    border-left: @grid-border-width solid #fff;
+                    border-right: @grid-border-width solid #fff;
                 }
 
                 > div {
@@ -263,7 +258,7 @@ p.center {
                     > div {
                         display: table-cell;
                         vertical-align: top;
-                        border: @grid-border-width solid white;
+                        border: @grid-border-width solid #fff;
                         overflow-x: auto;
 
                         > * + * {
@@ -354,8 +349,6 @@ p.center {
                 padding: 10px;
                 text-decoration: none;
                 border: 0;
-                .border-radius(5px);
-                .box-shadow( 0px 0px 5px 1px rgba(0,0,0,0.75));
                 float: left;
             }
         }
@@ -363,7 +356,6 @@ p.center {
 
     #bottom {
         display: block;
-        border-top: @layout-border-width solid black;
 
         p {
             padding: 10px;
@@ -425,11 +417,6 @@ p.center {
 
             #left {
                 left: 0;
-
-                > .table:before {
-                    right: -6px;
-                    background-image: linear-gradient( to right, #808080, transparent );
-                }
             }
 
             #right {
@@ -438,14 +425,7 @@ p.center {
                 > .table {
                     float: right;
                 }
-
-                > .table:before {
-                    left: -6px;
-                    background-image: linear-gradient( to left, #808080, transparent );
-                }
             }
         }
     }
 }
-
-@import "layout-theme";

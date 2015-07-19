@@ -90,6 +90,18 @@
         updateDynamicGrids();
     }
 
+    var theme = true;
+    // switch between base themes
+    toggleTheme = function () {
+        if(theme) {
+            $("#stylesheet-theme").attr("href", "css/theme/base-theme-github.css");
+        } else {
+            $("#stylesheet-theme").attr("href", "css/theme/base-theme.css");
+        }
+        theme = !theme;
+        updateDynamicGrids();
+    }
+
     toggleCenter = function () {
         var isExpanded = $("#toggle-center").hasClass("collapse");
         if (isExpanded) {
