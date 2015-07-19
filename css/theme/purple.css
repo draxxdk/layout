@@ -16,7 +16,7 @@
 #page #middle #left img.purple,
 #page #middle #center img.purple,
 #page #middle #right img.purple {
-  background-color: #8e44ad;
+  background-color: #8e44ad!important;
 }
 #page #middle #left .box.purple,
 #page #middle #center .box.purple,

@@ -16,7 +16,7 @@
 #page #middle #left img.blue,
 #page #middle #center img.blue,
 #page #middle #right img.blue {
-  background-color: #2980b9;
+  background-color: #2980b9!important;
 }
 #page #middle #left .box.blue,
 #page #middle #center .box.blue,

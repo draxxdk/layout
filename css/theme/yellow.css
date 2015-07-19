@@ -16,7 +16,7 @@
 #page #middle #left img.yellow,
 #page #middle #center img.yellow,
 #page #middle #right img.yellow {
-  background-color: #f39c12;
+  background-color: #f39c12!important;
 }
 #page #middle #left .box.yellow,
 #page #middle #center .box.yellow,
