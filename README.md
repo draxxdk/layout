@@ -80,6 +80,7 @@ Features
 <li>Making completely dynamic grids that works and looks identical in all browser</li>
 <li>Making a layout in a way so it doesn't care if you remove sections from it (except for main content section).</li>
 <li>Making a layout that is not depending on JS to work (This layout only uses JS for advanced grid media queries and to toggle layout sections).</li>
+<li>Making a layout that doesn't depend on float and calc() to work.</li>
 </ul>
 
 <h2>Screenshots</h2>
