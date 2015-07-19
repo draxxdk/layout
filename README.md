@@ -72,7 +72,7 @@ Features
 </table>
 
 <h2>Goals of the project</h2>
-<p>Overcome some of the common problems I have had with making website layouts, like the following:</p>
+<p>Overcome some of the common problems I have had with making website layouts in the past, like the following:</p>
 <ul>
 <li>div next to each other that has same height based on heighest one.</li>
 <li>div take up remaining browser window height / div container height</li>
