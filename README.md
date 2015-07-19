@@ -74,9 +74,9 @@ Features
 <h2>Goals of the project</h2>
 <p>Overcome some of the common problems I have had with making website layouts in the past, like the following:</p>
 <ul>
-<li>div next to each other that has same height based on heighest one.</li>
-<li>div take up remaining browser window height / div container height</li>
-<li>div take up remaining browser window width / div container width</li>
+<li>Making div next to each other that has same height based on heighest one.</li>
+<li>Making div take up remaining browser window height / div container height</li>
+<li>Making div take up remaining browser window width / div container width</li>
 <li>Making completely dynamic grids that works and looks identical in all browser</li>
 <li>Making a layout in a way so it doesn't care if you remove sections from it (except for main content section).</li>
 <li>Making a layout that is not depending on JS to work (This layout only uses JS for advanced grid media queries and to toggle layout sections).</li>
