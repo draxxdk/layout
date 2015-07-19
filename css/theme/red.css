@@ -1,0 +1,60 @@
+﻿#page #middle #left input[type=button].red,
+#page #middle #center input[type=button].red,
+#page #middle #right input[type=button].red,
+#page #middle #left .grid.red > div > div,
+#page #middle #center .grid.red > div > div,
+#page #middle #right .grid.red > div > div,
+#page #middle #left .grid > div.red > div,
+#page #middle #center .grid > div.red > div,
+#page #middle #right .grid > div.red > div,
+#page #middle #left .grid > div > div.red,
+#page #middle #center .grid > div > div.red,
+#page #middle #right .grid > div > div.red,
+#page #middle #left .box.red,
+#page #middle #center .box.red,
+#page #middle #right .box.red,
+#page #middle #left img.red,
+#page #middle #center img.red,
+#page #middle #right img.red {
+  background-color: #c0392b;
+}
+#page #middle #left .box.red,
+#page #middle #center .box.red,
+#page #middle #right .box.red,
+#page #middle #left .grid.red > div > div,
+#page #middle #center .grid.red > div > div,
+#page #middle #right .grid.red > div > div,
+#page #middle #left .grid > div.red > div,
+#page #middle #center .grid > div.red > div,
+#page #middle #right .grid > div.red > div,
+#page #middle #left .grid > div > div.red,
+#page #middle #center .grid > div > div.red,
+#page #middle #right .grid > div > div.red,
+#page #middle #left input[type=button].red,
+#page #middle #center input[type=button].red,
+#page #middle #right input[type=button].red {
+  color: #fff;
+}
+#page #middle #left .box.red a,
+#page #middle #center .box.red a,
+#page #middle #right .box.red a,
+#page #middle #left .grid.red > div > div a,
+#page #middle #center .grid.red > div > div a,
+#page #middle #right .grid.red > div > div a,
+#page #middle #left .grid > div.red > div a,
+#page #middle #center .grid > div.red > div a,
+#page #middle #right .grid > div.red > div a,
+#page #middle #left .grid > div > div.red a,
+#page #middle #center .grid > div > div.red a,
+#page #middle #right .grid > div > div.red a,
+#page #middle #left input[type=button].red a,
+#page #middle #center input[type=button].red a,
+#page #middle #right input[type=button].red a {
+  color: #fff;
+}
+#page #middle #left input[type=button].red:hover,
+#page #middle #center input[type=button].red:hover,
+#page #middle #right input[type=button].red:hover {
+  background-color: #e74c3c;
+  color: #000;
+}

@@ -1,0 +1,60 @@
+﻿#page #middle #left input[type=button].yellow,
+#page #middle #center input[type=button].yellow,
+#page #middle #right input[type=button].yellow,
+#page #middle #left .grid.yellow > div > div,
+#page #middle #center .grid.yellow > div > div,
+#page #middle #right .grid.yellow > div > div,
+#page #middle #left .grid > div.yellow > div,
+#page #middle #center .grid > div.yellow > div,
+#page #middle #right .grid > div.yellow > div,
+#page #middle #left .grid > div > div.yellow,
+#page #middle #center .grid > div > div.yellow,
+#page #middle #right .grid > div > div.yellow,
+#page #middle #left .box.yellow,
+#page #middle #center .box.yellow,
+#page #middle #right .box.yellow,
+#page #middle #left img.yellow,
+#page #middle #center img.yellow,
+#page #middle #right img.yellow {
+  background-color: #f39c12;
+}
+#page #middle #left .box.yellow,
+#page #middle #center .box.yellow,
+#page #middle #right .box.yellow,
+#page #middle #left .grid.yellow > div > div,
+#page #middle #center .grid.yellow > div > div,
+#page #middle #right .grid.yellow > div > div,
+#page #middle #left .grid > div.yellow > div,
+#page #middle #center .grid > div.yellow > div,
+#page #middle #right .grid > div.yellow > div,
+#page #middle #left .grid > div > div.yellow,
+#page #middle #center .grid > div > div.yellow,
+#page #middle #right .grid > div > div.yellow,
+#page #middle #left input[type=button].yellow,
+#page #middle #center input[type=button].yellow,
+#page #middle #right input[type=button].yellow {
+  color: #fff;
+}
+#page #middle #left .box.yellow a,
+#page #middle #center .box.yellow a,
+#page #middle #right .box.yellow a,
+#page #middle #left .grid.yellow > div > div a,
+#page #middle #center .grid.yellow > div > div a,
+#page #middle #right .grid.yellow > div > div a,
+#page #middle #left .grid > div.yellow > div a,
+#page #middle #center .grid > div.yellow > div a,
+#page #middle #right .grid > div.yellow > div a,
+#page #middle #left .grid > div > div.yellow a,
+#page #middle #center .grid > div > div.yellow a,
+#page #middle #right .grid > div > div.yellow a,
+#page #middle #left input[type=button].yellow a,
+#page #middle #center input[type=button].yellow a,
+#page #middle #right input[type=button].yellow a {
+  color: #fff;
+}
+#page #middle #left input[type=button].yellow:hover,
+#page #middle #center input[type=button].yellow:hover,
+#page #middle #right input[type=button].yellow:hover {
+  background-color: #f1c40f;
+  color: #000;
+}

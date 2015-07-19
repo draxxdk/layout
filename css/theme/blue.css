@@ -1,0 +1,60 @@
+﻿#page #middle #left input[type=button].blue,
+#page #middle #center input[type=button].blue,
+#page #middle #right input[type=button].blue,
+#page #middle #left .grid.blue > div > div,
+#page #middle #center .grid.blue > div > div,
+#page #middle #right .grid.blue > div > div,
+#page #middle #left .grid > div.blue > div,
+#page #middle #center .grid > div.blue > div,
+#page #middle #right .grid > div.blue > div,
+#page #middle #left .grid > div > div.blue,
+#page #middle #center .grid > div > div.blue,
+#page #middle #right .grid > div > div.blue,
+#page #middle #left .box.blue,
+#page #middle #center .box.blue,
+#page #middle #right .box.blue,
+#page #middle #left img.blue,
+#page #middle #center img.blue,
+#page #middle #right img.blue {
+  background-color: #2980b9;
+}
+#page #middle #left .box.blue,
+#page #middle #center .box.blue,
+#page #middle #right .box.blue,
+#page #middle #left .grid.blue > div > div,
+#page #middle #center .grid.blue > div > div,
+#page #middle #right .grid.blue > div > div,
+#page #middle #left .grid > div.blue > div,
+#page #middle #center .grid > div.blue > div,
+#page #middle #right .grid > div.blue > div,
+#page #middle #left .grid > div > div.blue,
+#page #middle #center .grid > div > div.blue,
+#page #middle #right .grid > div > div.blue,
+#page #middle #left input[type=button].blue,
+#page #middle #center input[type=button].blue,
+#page #middle #right input[type=button].blue {
+  color: #fff;
+}
+#page #middle #left .box.blue a,
+#page #middle #center .box.blue a,
+#page #middle #right .box.blue a,
+#page #middle #left .grid.blue > div > div a,
+#page #middle #center .grid.blue > div > div a,
+#page #middle #right .grid.blue > div > div a,
+#page #middle #left .grid > div.blue > div a,
+#page #middle #center .grid > div.blue > div a,
+#page #middle #right .grid > div.blue > div a,
+#page #middle #left .grid > div > div.blue a,
+#page #middle #center .grid > div > div.blue a,
+#page #middle #right .grid > div > div.blue a,
+#page #middle #left input[type=button].blue a,
+#page #middle #center input[type=button].blue a,
+#page #middle #right input[type=button].blue a {
+  color: #fff;
+}
+#page #middle #left input[type=button].blue:hover,
+#page #middle #center input[type=button].blue:hover,
+#page #middle #right input[type=button].blue:hover {
+  background-color: #3498db;
+  color: #000;
+}

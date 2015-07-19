@@ -1,0 +1,60 @@
+﻿#page #middle #left input[type=button].purple,
+#page #middle #center input[type=button].purple,
+#page #middle #right input[type=button].purple,
+#page #middle #left .grid.purple > div > div,
+#page #middle #center .grid.purple > div > div,
+#page #middle #right .grid.purple > div > div,
+#page #middle #left .grid > div.purple > div,
+#page #middle #center .grid > div.purple > div,
+#page #middle #right .grid > div.purple > div,
+#page #middle #left .grid > div > div.purple,
+#page #middle #center .grid > div > div.purple,
+#page #middle #right .grid > div > div.purple,
+#page #middle #left .box.purple,
+#page #middle #center .box.purple,
+#page #middle #right .box.purple,
+#page #middle #left img.purple,
+#page #middle #center img.purple,
+#page #middle #right img.purple {
+  background-color: #8e44ad;
+}
+#page #middle #left .box.purple,
+#page #middle #center .box.purple,
+#page #middle #right .box.purple,
+#page #middle #left .grid.purple > div > div,
+#page #middle #center .grid.purple > div > div,
+#page #middle #right .grid.purple > div > div,
+#page #middle #left .grid > div.purple > div,
+#page #middle #center .grid > div.purple > div,
+#page #middle #right .grid > div.purple > div,
+#page #middle #left .grid > div > div.purple,
+#page #middle #center .grid > div > div.purple,
+#page #middle #right .grid > div > div.purple,
+#page #middle #left input[type=button].purple,
+#page #middle #center input[type=button].purple,
+#page #middle #right input[type=button].purple {
+  color: #fff;
+}
+#page #middle #left .box.purple a,
+#page #middle #center .box.purple a,
+#page #middle #right .box.purple a,
+#page #middle #left .grid.purple > div > div a,
+#page #middle #center .grid.purple > div > div a,
+#page #middle #right .grid.purple > div > div a,
+#page #middle #left .grid > div.purple > div a,
+#page #middle #center .grid > div.purple > div a,
+#page #middle #right .grid > div.purple > div a,
+#page #middle #left .grid > div > div.purple a,
+#page #middle #center .grid > div > div.purple a,
+#page #middle #right .grid > div > div.purple a,
+#page #middle #left input[type=button].purple a,
+#page #middle #center input[type=button].purple a,
+#page #middle #right input[type=button].purple a {
+  color: #fff;
+}
+#page #middle #left input[type=button].purple:hover,
+#page #middle #center input[type=button].purple:hover,
+#page #middle #right input[type=button].purple:hover {
+  background-color: #af7ac4;
+  color: #000;
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <link href="css/layout.css" rel="stylesheet" />
+    <!--<link rel="stylesheet/less" type="text/css" href="less/layout.less" />-->
+    <!--<script src="js/less-1.5.1.min.js"></script>-->
+</head>
+<body>
+    <div id="page" class="table">
+        <div id="top">
+            <h1>The Holy Grail <sup>(kinda)</sup></h1>
+        </div>
+        <div id="middle" class="row expand-height">
+            <div class="table">
+                <div id="loading"><span></span></div>
+                <div id="left" class="cell hidden">
+                    <div class="table">
+                        <h2>
+                            Left sidebar
+                            <a href="#" id="close-left">&nbsp;</a>
+                        </h2>
+                        <div class="row expand-height">
+                            <div class="scroll">
+                                <div class="grid">
+                                    <h3 class="center">Grid with images</h3>
+                                    <div class="items-4">
+                                        <div><img src="img/html5.png" class="padding orange" /></div>
+                                        <div><img src="img/css3.png" class="padding blue" /></div>
+                                        <div><img src="img/jquery.png" class="padding yellow" /></div>
+                                        <div><img src="img/html5.png" class="padding orange" /></div>
+                                    </div>
+                                    <div class="items-3">
+                                        <div><img src="img/html5.png" class="padding orange" /></div>
+                                        <div><img src="img/css3.png" class="padding blue" /></div>
+                                        <div><img src="img/jquery.png" class="padding yellow" /></div>
+                                    </div>
+                                    <div class="items-2">
+                                        <div><img src="img/html5.png" class="padding orange" /></div>
+                                        <div><img src="img/css3.png" class="padding blue" /></div>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="box">
+                                    <h3>HTML5</h3>
+                                    <img src="img/html5.png" class="padding orange" />
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper massa id erat blandit, et auctor nisl sollicitudin.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="center" class="cell">
+                    <div class="table">
+                        <h2>
+                            Content
+                            <a href="#" id="toggle-center">&nbsp;</a>
+                        </h2>
+                        <div class="row expand-height">
+                            <div class="scroll">
+                                <div class="buttons">
+                                    <input type="button" id="toggle-left" value="Toggle left" class="green" />
+                                    <input type="button" id="toggle-right" value="Toggle right" class="blue" />
+                                    <input type="button" id="toggle-top" value="Toggle top" class="purple" />
+                                    <input type="button" id="toggle-bottom" value="Toggle bottom" class="yellow" />
+                                    <input type="button" id="toggle-page" value="Toggle page" class="orange" />
+                                </div>
+                                <hr />
+                                <div class="box">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th colspan="3"><h3>Features</h3></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Float and calc()</th>
+                                                <td colspan="2">
+                                                    It is possible to make layouts without polluting you CSS with 100's of floats and calc()'s.<br />
+                                                    This layout uses zero calc() and only 2 float.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Dynamic heights</th>
+                                                <td colspan="2">The layout sections #left, #center and #right takes available height. If top or bottom section changes height, middle section just gets bigger or smaller, without any javascript involved.</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Dynamic widths</th>
+                                                <td colspan="2">The width for #left and #right can be individually set in for example: px, %, em.</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Grid</th>
+                                                <td colspan="2">Simple and powerful grid. cells in a grid row all expands based on the heightest cell. To see it in action look at the images in #left and the gray boxes in #center.</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Minimal jQuery</th>
+                                                <td colspan="2">
+                                                    The layout uses jQuery to toggle different layout sections and to make advanced media queries for dynamic grids.<br />
+                                                    Look at the grid below and try resizing your browser width to see it change.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Ellipsis headlines</th>
+                                                <td colspan="2">h2 has ellipsis effect on to ensure they stay on one line. It can easely be changed in CSS without causing any bugs for the layout.</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Initial states</th>
+                                                <td colspan="2">The layout sections #top, #bottom, #left and #right can be set to initial hidden by adding .hidden to them.</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Solid layout</th>
+                                                <td colspan="2">The layout will still work if you remove any or all of these layout sections: #top, #bottom, #left and #right.</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Full-width or centered layout</th>
+                                                <td colspan="2">By default the layout is full-width, but can be be centered with a max width by adding .center to #page</td>
+                                            </tr>
+                                            <tr>
+                                                <th>No sub-pixel rendering problems</th>
+                                                <td colspan="2">Border and background-color is applied to the first child element in sidebars instead of the sidebars themselves to ensure that there won't be any sub-pixel rendering issues.</td>
+                                            </tr>
+                                            <tr>
+                                                <th>CSS media queries</th>
+                                                <td colspan="2">When the layout is smaller then a certain width, the sidebars will change from being next to center to being on top of it.</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Better box-shadow</th>
+                                                <td colspan="2">Instead of using regular box-shadow that rounds the shadows at corners, the sidebars uses gradients without rounded corners.</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Cross-browser</th>
+                                                <td colspan="2">The layout looks the same in Chrome, Firefox and IE, other then the scrollbars, that only looks nice in Chrome.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <hr />
+                                <div class="grid green padding dynamic">
+                                    <h3>Dynamic width</h3>
+                                    <div class="items-3" data-width="600">
+                                        <div><p>33.3%</p></div>
+                                        <div><p>33.3%</p></div>
+                                        <div><p>33.3%</p></div>
+                                    </div>
+                                    <div class="items-2" data-width="500">
+                                        <div><p>50%</p></div>
+                                        <div><p>50%</p></div>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="grid default padding">
+                                    <div class="items-1">
+                                        <div><p>100%</p></div>
+                                    </div>
+                                    <div class="items-2 yellow">
+                                        <div><p>50%</p></div>
+                                        <div><p>50%</p></div>
+                                    </div>
+                                    <div class="items-3">
+                                        <div class="red"><p>33.3%</p></div>
+                                        <div class="blue"><p>33.3%</p></div>
+                                        <div class="green">
+                                            <p>
+                                                33.3%<br />
+                                                Integer faucibus quam convallis ante luctus aliquam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="items-3">
+                                        <div><p>33.3%</p></div>
+                                        <div class="width-66"><p>66.6%</p></div>
+                                    </div>
+                                    <div class="items-4">
+                                        <div class="purple"><p>25%</p></div>
+                                        <div><p>25%</p></div>
+                                        <div>
+                                            <p>25%</p>
+                                            <div class="img">
+                                                <img src="img/html5.png" class="padding orange fill-width" />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h3>Hey</h3>
+                                            <p>
+                                                25%<br /><br />
+                                                In a mi vitae neque viverra venenatis in egestas diam. Sed in consequat nisl. Sed mattis, tellus sagittis pellentesque semper, leo nisi lacinia erat, quis tincidunt erat massa quis lacus.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="items-4">
+                                        <div><p>25%</p></div>
+                                        <div><p>25%</p></div>
+                                        <div class="width-50"><p>50%</p></div>
+                                    </div>
+                                    <div class="items-4">
+                                        <div><p>25%</p></div>
+                                        <div class="width-75"><p>75%</p></div>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="box red padding">
+                                    <h3>Known issues</h3>
+                                    <ul class="bullets">
+                                        <li>
+                                            Webkit (Google Chrome) has problems with images and overflow:auto.<br />
+                                            Images gets resized wrong and default browser scrollbar overlaps content instead of pushing it to the left.<br />
+                                            I have reported this bug on Google Chrome Help Forum <a href="https://productforums.google.com/forum/#!topic/chrome/Vrosp7NiKFw;context-place=forum/chrome" target="_blank">here</a> and made a post about it on CSS-Tricks <a href="https://css-tricks.com/forums/topic/how-do-you-fix-webkit-overflow-img-bug/" target="_blank">here</a>.<br />
+                                            I have added a webkit targetet CSS hack that sets overflow to scroll for webkit.<br />
+                                            When Google or someone else finds a solution for this, it will be fixed in this layout.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr />
+                                <div class="box">
+                                    <h3>Upcomming features</h3>
+                                    <ul class="bullets">
+                                        <li>
+                                            Dynamic sidebar h2 + close button. Planning on making it grid based so h2 won't need padding-right based on close button width.
+                                            <!--No upcomming features are planned atm.-->
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr />
+                                <div class="box">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper massa id erat blandit, et auctor nisl sollicitudin. Vivamus efficitur venenatis euismod. Vivamus accumsan, felis at ullamcorper sodales, quam purus egestas purus, non maximus nunc lorem quis enim. Morbi erat odio, dictum ut nisl nec, tempus ultrices tellus. Proin hendrerit at lectus quis mattis. Morbi tincidunt nec elit non lobortis. Pellentesque a sem porttitor, cursus neque a, dictum massa. Nunc tincidunt imperdiet ornare.<br />
+                                        <br />
+                                        Sed non orci lorem. Integer tempus molestie neque vel consectetur. Pellentesque scelerisque lacinia purus quis gravida. Vestibulum nec felis quis leo cursus fringilla. Donec rhoncus, neque vel venenatis posuere, metus leo imperdiet sapien, nec bibendum tortor est ac neque. Proin vulputate fringilla pretium. Fusce rhoncus mi et mauris pulvinar, aliquam aliquet felis fringilla. Etiam ultricies efficitur augue sed varius. Ut dictum diam sed interdum aliquet. Sed bibendum dignissim euismod. Proin congue id ante eget semper. Nullam iaculis fringilla luctus. Nullam ut ante convallis lectus blandit semper. Donec nisl sapien, tristique id nibh eget, luctus varius lectus. Nulla facilisi. Quisque vitae nibh arcu.<br />
+                                        <br />
+                                        Nulla sagittis lorem id sapien finibus commodo non sit amet ipsum. Etiam feugiat rhoncus nulla eu finibus. Donec finibus ligula nulla, non suscipit odio aliquet in. Mauris semper ornare nisi vitae tristique. Proin nec cursus purus, ut dapibus eros. Integer faucibus quam convallis ante luctus aliquam. Nam in massa vel magna rhoncus mollis.<br />
+                                        <br />
+                                        In a mi vitae neque viverra venenatis in egestas diam. Sed in consequat nisl. Sed mattis, tellus sagittis pellentesque semper, leo nisi lacinia erat, quis tincidunt erat massa quis lacus. Nulla vehicula porttitor ante, sit amet faucibus ipsum tempor sit amet. Cras pretium elit id nunc iaculis pellentesque. Sed ullamcorper sed massa porttitor aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur facilisis elit quis nisl rutrum, tempor vulputate lectus varius. Aliquam fermentum vulputate blandit. Sed sit amet semper tortor, fermentum congue tortor.
+                                    </p>
+                                </div>
+                                <div class="box">
+                                    <h3>Links</h3>
+                                    <ul>
+                                        <li><a href="#">https://google.com</a></li>
+                                        <li><a href="#">https://youtube.com</a></li>
+                                        <li><a href="#">https://facebook.com</a></li>
+                                        <li><a href="#">https://twitter.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="right" class="cell">
+                    <div class="table">
+                        <h2>
+                            Right sidebar
+                            <a href="#" id="close-right">&nbsp;</a>
+                        </h2>
+                        <div class="row expand-height">
+                            <div class="scroll">
+                                <div class="box">
+                                    <h3>HTML5</h3>
+                                    <img src="img/html5.png" class="padding orange" />
+                                </div>
+                                <hr />
+                                <div class="box">
+                                    <h3>CSS3</h3>
+                                    <img src="img/css3.png" class="padding blue" />
+                                </div>
+                                <hr />
+                                <div class="box">
+                                    <h3>jQuery</h3>
+                                    <img src="img/jquery.png" class="padding yellow" />
+                                </div>
+                                <hr />
+                                <div class="box">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id ex nec urna gravida rutrum a a lorem.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+            <p>Developed by Frederik Nielsen</p>
+        </div>
+    </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.layout.js"></script>
+    <script>
+        $(function () {
+            $("#toggle-top").click(function () {
+                toggleTop();
+            });
+
+            $("#toggle-page").click(function () {
+                togglePage();
+            });
+
+            $("#toggle-bottom").click(function () {
+                toggleBottom();
+            });
+
+            $("#toggle-left, #close-left").click(function () {
+                toggleLeft();
+            });
+
+            $("#toggle-right, #close-right").click(function () {
+                toggleRight();
+            });
+
+            $("#toggle-center").click(function () {
+                toggleCenter();
+            });
+        });
+    </script>
+</body>
+</html>

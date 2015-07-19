@@ -1,0 +1,450 @@
+﻿@import "mixins";
+@import "reset";
+
+@left-width: 200px; /* can also be set in percentage */
+@right-width: 200px; /* can also be set in percentage */
+@grid-border-width: 5px;
+@layout-border-width: 2px;
+
+h3,
+p,
+ul li {
+    word-spacing: initial;
+}
+
+h1.center,
+h2.center,
+h3.center,
+p.center {
+    text-align: center;
+}
+
+#page {
+    .hidden {
+        display: none !important;
+    }
+
+    #top {
+        display: block;
+        border-bottom: @layout-border-width solid black;
+
+        h1 {
+            padding: 10px;
+            font-size: 2em;
+        }
+    }
+
+    #middle {
+        > .table {
+            position: relative;
+            overflow: hidden;
+
+            #loading {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: white;
+                opacity: 0.9;
+                z-index: 10;
+                width: 100%;
+                height: 100%;
+                display: block;
+
+                span {
+                    position: absolute;
+                    top: calc(50%);
+                    left: calc(50%);
+                    transform: translate(-50%, -50%);
+                    margin: 0px auto;
+                    width: 66px;
+                    height: 66px;
+                    opacity: 1 !important;
+                    z-index: 9999;
+                    display: block;
+                    background-image: url(../img/icon/ajax-loader.gif);
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+
+        h2 {
+            position: relative;
+            padding: 10px 38px 10px 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-align: center;
+
+            a {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                width: 22px;
+                height: 22px;
+                border: none;
+                .border-radius(13px);
+                color: transparent;
+                background-position: left bottom;
+            }
+
+            a:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 14px;
+                height: 14px;
+            }
+
+            a:hover:before {
+                background-position: left bottom;
+            }
+        }
+
+        hr {
+            margin: 0 10px;
+            border: 0;
+            height: 2px;
+            display: block;
+        }
+
+        #left {
+            width: @left-width;
+
+            > .table {
+                border-right: @layout-border-width solid black;
+            }
+        }
+
+        #center {
+            width: 100%;
+
+            a:before {
+                background-size: 28px 28px;
+            }
+
+            a:before {
+                background-image: url(../img/icon/expand-collapse.png);
+                background-position: left top;
+            }
+
+            a:hover:before {
+                background-position: left bottom;
+            }
+
+            a.collapse:before {
+                background-position: right top;
+            }
+
+            a.collapse:hover:before {
+                background-position: right bottom;
+            }
+        }
+
+        #right {
+            width: @right-width;
+
+            > .table {
+                border-left: @layout-border-width solid black;
+            }
+        }
+
+        #left,
+        #right {
+            max-width: 33.33333333333333%;
+
+            a:before {
+                background-image: url(../img/icon/close.png);
+                background-size: 14px 28px;
+                background-position: left top;
+            }
+
+            a:hover:before {
+                background-position: left bottom;
+            }
+        }
+
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            /* CSS Statements that only apply on webkit-based browsers 
+                (Chrome, Safari, etc.) */
+            .scroll {
+                /* this ensures that the scrollbar never overlaps 
+                    the content in the div with scroll */
+                overflow-y: scroll !important;
+            }
+        }
+
+        .scroll {
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            width: 100%;
+            height: 0; // firefox overflow auto fix
+            min-height: 100%; // firefox overflow auto fix
+            max-height: 100%; // firefox overflow auto fix
+            ul.bullets li {
+                padding-left: 15px;
+                position: relative;
+            }
+
+            ul li:not(:last-child) {
+                margin-bottom: 5px;
+            }
+
+            ul.bullets li:before {
+                content: '•';
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            img.fill-width {
+                width: 100%;
+            }
+
+            ul.padding,
+            img.padding {
+                padding: 10%;
+            }
+
+            p {
+                overflow-x: auto;
+            }
+
+            .box,
+            .buttons {
+                display: block;
+                overflow-x: auto;
+                overflow-y: hidden;
+            }
+
+            .box {
+                margin: 10px;
+
+                > * + * {
+                    margin-top: 5px;
+                }
+            }
+
+            .grid.dynamic-width {
+                display: none;
+            }
+
+            .box.padding,
+            .grid.padding > div > div {
+                padding: 10px;
+            }
+
+            .grid {
+                border: @grid-border-width solid white;
+                width: 100%;
+
+                > h3 {
+                    border-top: @grid-border-width solid white;
+                    border-left: @grid-border-width solid white;
+                    border-right: @grid-border-width solid white;
+                }
+
+                > div {
+                    display: table;
+                    table-layout: fixed;
+                    margin: 0;
+                    width: 100%;
+
+                    > div {
+                        display: table-cell;
+                        vertical-align: top;
+                        border: @grid-border-width solid white;
+                        overflow-x: auto;
+
+                        > * + * {
+                            margin-top: 5px;
+                        }
+                    }
+                }
+
+                > .rows {
+                    display: block;
+
+                    > div {
+                        display: block;
+                        width: 100% !important;
+                    }
+                }
+
+                .items-1 {
+                    > div {
+                        width: 100%;
+                    }
+                }
+
+                .items-2 {
+                    > div {
+                        width: 50%;
+                    }
+                }
+
+                .items-3 {
+                    > div {
+                        width: 33.33333333333333%;
+                    }
+
+                    > .width-66 {
+                        width: 66.66666666666667%;
+                    }
+                }
+
+                .items-4 {
+                    > div {
+                        width: 25%;
+                    }
+
+                    > .width-50 {
+                        width: 50%;
+                    }
+
+                    > .width-75 {
+                        width: 75%;
+                    }
+                }
+            }
+
+            table {
+                table-layout: fixed;
+                width: 100%;
+
+                th,
+                td {
+                    padding: 10px;
+                    vertical-align: top;
+                }
+
+                thead tr th {
+                    text-align: center;
+                }
+
+                tbody {
+                    tr th {
+                        font-weight: normal;
+                        text-align: right;
+                    }
+
+                    tr th,
+                    tr td {
+                        overflow-x: auto;
+                    }
+                }
+            }
+        }
+
+        .buttons {
+            padding: 10px 0px 0px 10px;
+
+            input[type=button] {
+                margin: 0 10px 10px 0;
+                padding: 10px;
+                text-decoration: none;
+                border: 0;
+                .border-radius(5px);
+                .box-shadow( 0px 0px 5px 1px rgba(0,0,0,0.75));
+                float: left;
+            }
+        }
+    }
+
+    #bottom {
+        display: block;
+        border-top: @layout-border-width solid black;
+
+        p {
+            padding: 10px;
+        }
+    }
+}
+
+#page.center {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+
+    .row {
+        display: table-row;
+        width: 100%;
+        vertical-align: bottom;
+
+        .cell {
+            display: table-cell;
+            vertical-align: top;
+            white-space: initial;
+        }
+    }
+
+    .expand-height {
+        height: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    #page {
+        #middle {
+            #left,
+            #right {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                z-index: 1;
+
+                > .table {
+                    position: relative;
+                }
+
+                > .table:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    width: 4px;
+                    pointer-events: none;
+                }
+            }
+
+            #left {
+                left: 0;
+
+                > .table:before {
+                    right: -6px;
+                    background-image: linear-gradient( to right, #808080, transparent );
+                }
+            }
+
+            #right {
+                right: 0;
+
+                > .table {
+                    float: right;
+                }
+
+                > .table:before {
+                    left: -6px;
+                    background-image: linear-gradient( to left, #808080, transparent );
+                }
+            }
+        }
+    }
+}
+
+@import "layout-theme";

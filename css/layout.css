@@ -1,0 +1,372 @@
+﻿@import url('reset.css');
+@import url('theme/base-theme.css');
+@import url('theme/blue.css');
+@import url('theme/green.css');
+@import url('theme/orange.css');
+@import url('theme/purple.css');
+@import url('theme/red.css');
+@import url('theme/yellow.css');
+h3,
+p,
+ul li {
+  word-spacing: initial;
+}
+h1.center,
+h2.center,
+h3.center,
+p.center {
+  text-align: center;
+}
+#page .hidden {
+  display: none !important;
+}
+#page #top {
+  display: block;
+  border-bottom: 2px solid black;
+}
+#page #top h1 {
+  padding: 10px;
+  font-size: 2em;
+}
+#page #middle > .table {
+  position: relative;
+  overflow: hidden;
+}
+#page #middle > .table #loading {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  opacity: 0.9;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#page #middle > .table #loading span {
+  position: absolute;
+  top: calc(50%);
+  left: calc(50%);
+  transform: translate(-50%, -50%);
+  margin: 0px auto;
+  width: 66px;
+  height: 66px;
+  opacity: 1 !important;
+  z-index: 9999;
+  display: block;
+  background-image: url(../img/icon/ajax-loader.gif);
+  background-repeat: no-repeat;
+}
+#page #middle h2 {
+  position: relative;
+  padding: 10px 38px 10px 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+#page #middle h2 a {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 22px;
+  height: 22px;
+  border: none;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: transparent;
+  background-position: left bottom;
+}
+#page #middle h2 a:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+}
+#page #middle h2 a:hover:before {
+  background-position: left bottom;
+}
+#page #middle hr {
+  margin: 0 10px;
+  border: 0;
+  height: 2px;
+  display: block;
+}
+#page #middle #left {
+  width: 200px;
+}
+#page #middle #left > .table {
+  border-right: 2px solid black;
+}
+#page #middle #center {
+  width: 100%;
+}
+#page #middle #center a:before {
+  background-size: 28px 28px;
+}
+#page #middle #center a:before {
+  background-image: url(../img/icon/expand-collapse.png);
+  background-position: left top;
+}
+#page #middle #center a:hover:before {
+  background-position: left bottom;
+}
+#page #middle #center a.collapse:before {
+  background-position: right top;
+}
+#page #middle #center a.collapse:hover:before {
+  background-position: right bottom;
+}
+#page #middle #right {
+  width: 200px;
+}
+#page #middle #right > .table {
+  border-left: 2px solid black;
+}
+#page #middle #left,
+#page #middle #right {
+  max-width: 33.33333333333333%;
+}
+#page #middle #left a:before,
+#page #middle #right a:before {
+  background-image: url(../img/icon/close.png);
+  background-size: 14px 28px;
+  background-position: left top;
+}
+#page #middle #left a:hover:before,
+#page #middle #right a:hover:before {
+  background-position: left bottom;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  #page #middle {
+    /* CSS Statements that only apply on webkit-based browsers (Chrome, Safari, etc.) */
+  }
+  #page #middle .scroll {
+    /* this ensures that the scrollbar never overlaps  the content in the div with scroll */
+    overflow-y: scroll !important;
+  }
+}
+#page #middle .scroll {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  height: 0;
+  min-height: 100%;
+  max-height: 100%;
+}
+#page #middle .scroll ul.bullets li {
+  padding-left: 15px;
+  position: relative;
+}
+#page #middle .scroll ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+#page #middle .scroll ul.bullets li:before {
+  content: '•';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#page #middle .scroll img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+#page #middle .scroll img.fill-width {
+  width: 100%;
+}
+#page #middle .scroll ul.padding,
+#page #middle .scroll img.padding {
+  padding: 10%;
+}
+#page #middle .scroll p {
+  overflow-x: auto;
+}
+#page #middle .scroll .box,
+#page #middle .scroll .buttons {
+  display: block;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+#page #middle .scroll .box {
+  margin: 10px;
+}
+#page #middle .scroll .box > * + * {
+  margin-top: 5px;
+}
+#page #middle .scroll .grid.dynamic-width {
+  display: none;
+}
+#page #middle .scroll .box.padding,
+#page #middle .scroll .grid.padding > div > div {
+  padding: 10px;
+}
+#page #middle .scroll .grid {
+  border: 5px solid white;
+  width: 100%;
+}
+#page #middle .scroll .grid > h3 {
+  border-top: 5px solid white;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+}
+#page #middle .scroll .grid > div {
+  display: table;
+  table-layout: fixed;
+  margin: 0;
+  width: 100%;
+}
+#page #middle .scroll .grid > div > div {
+  display: table-cell;
+  vertical-align: top;
+  border: 5px solid white;
+  overflow-x: auto;
+}
+#page #middle .scroll .grid > div > div > * + * {
+  margin-top: 5px;
+}
+#page #middle .scroll .grid > .rows {
+  display: block;
+}
+#page #middle .scroll .grid > .rows > div {
+  display: block;
+  width: 100% !important;
+}
+#page #middle .scroll .grid .items-1 > div {
+  width: 100%;
+}
+#page #middle .scroll .grid .items-2 > div {
+  width: 50%;
+}
+#page #middle .scroll .grid .items-3 > div {
+  width: 33.33333333333333%;
+}
+#page #middle .scroll .grid .items-3 > .width-66 {
+  width: 66.66666666666667%;
+}
+#page #middle .scroll .grid .items-4 > div {
+  width: 25%;
+}
+#page #middle .scroll .grid .items-4 > .width-50 {
+  width: 50%;
+}
+#page #middle .scroll .grid .items-4 > .width-75 {
+  width: 75%;
+}
+#page #middle .scroll table {
+  table-layout: fixed;
+  width: 100%;
+}
+#page #middle .scroll table th,
+#page #middle .scroll table td {
+  padding: 10px;
+  vertical-align: top;
+}
+#page #middle .scroll table thead tr th {
+  text-align: center;
+}
+#page #middle .scroll table tbody tr th {
+  font-weight: normal;
+  text-align: right;
+}
+#page #middle .scroll table tbody tr th,
+#page #middle .scroll table tbody tr td {
+  overflow-x: auto;
+}
+#page #middle .buttons {
+  padding: 10px 0px 0px 10px;
+}
+#page #middle .buttons input[type=button] {
+  margin: 0 10px 10px 0;
+  padding: 10px;
+  text-decoration: none;
+  border: 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  float: left;
+}
+#page #bottom {
+  display: block;
+  border-top: 2px solid black;
+}
+#page #bottom p {
+  padding: 10px;
+}
+#page.center {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  table-layout: fixed;
+}
+.table .row {
+  display: table-row;
+  width: 100%;
+  vertical-align: bottom;
+}
+.table .row .cell {
+  display: table-cell;
+  vertical-align: top;
+  white-space: initial;
+}
+.table .expand-height {
+  height: 100%;
+}
+@media (max-width: 700px) {
+  #page #middle #left,
+  #page #middle #right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  #page #middle #left > .table,
+  #page #middle #right > .table {
+    position: relative;
+  }
+  #page #middle #left > .table:before,
+  #page #middle #right > .table:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    pointer-events: none;
+  }
+  #page #middle #left {
+    left: 0;
+  }
+  #page #middle #left > .table:before {
+    right: -6px;
+    background-image: linear-gradient(to right, #808080, transparent);
+  }
+  #page #middle #right {
+    right: 0;
+  }
+  #page #middle #right > .table {
+    float: right;
+  }
+  #page #middle #right > .table:before {
+    left: -6px;
+    background-image: linear-gradient(to left, #808080, transparent);
+  }
+}

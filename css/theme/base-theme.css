@@ -1,0 +1,72 @@
+﻿::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+#page #top,
+#page #bottom,
+#page #middle h2 a:hover,
+#page #middle h2 a:hover,
+::-webkit-scrollbar-thumb {
+  background-color: #3b3b3b;
+}
+body {
+  background-color: #808080;
+}
+a {
+  color: #000;
+}
+#page #top,
+#page #bottom {
+  border-color: #808080;
+  color: #fff;
+}
+#page #middle h2,
+#page #middle input[type=button],
+#page #middle table thead tr th {
+  background-color: #aaa;
+}
+#page #middle input[type=button]:hover {
+  background-color: #ccc;
+}
+#page #middle #left .box.default,
+#page #middle #right .box.default,
+#page #middle #left .grid.default > div > div,
+#page #middle #right .grid.default > div > div,
+#page #middle #left hr,
+#page #middle #right hr,
+#page #middle #center,
+#page #middle #left table,
+#page #middle #right table,
+#page #middle table tbody tr:nth-child(even) th,
+#page #middle table tbody tr:nth-child(even) td {
+  background-color: #fff;
+}
+#page #middle #center .grid,
+#page #middle #center .grid > h3,
+#page #middle #center .grid > div > div {
+  border-color: #fff;
+}
+#page #middle h2 a,
+#page #middle h2 a,
+#page #middle #center .box.default,
+#page #middle #center .grid.default > div > div,
+#page #middle #center hr,
+#page #middle #left > .table,
+#page #middle #right > .table,
+#page #middle #center table,
+#page #middle table tbody tr:nth-child(odd) th,
+#page #middle table tbody tr:nth-child(odd) td {
+  background-color: #ddd;
+}
+#page #middle #left .grid,
+#page #middle #right .grid,
+#page #middle #left .grid > h3,
+#page #middle #right .grid > h3,
+#page #middle #left .grid > div > div,
+#page #middle #right .grid > div > div {
+  border-color: #ddd;
+}
+#page #middle #left > .table,
+#page #middle #right > .table {
+  border-color: #808080;
+}

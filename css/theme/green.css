@@ -1,0 +1,60 @@
+﻿#page #middle #left input[type=button].green,
+#page #middle #center input[type=button].green,
+#page #middle #right input[type=button].green,
+#page #middle #left .grid.green > div > div,
+#page #middle #center .grid.green > div > div,
+#page #middle #right .grid.green > div > div,
+#page #middle #left .grid > div.green > div,
+#page #middle #center .grid > div.green > div,
+#page #middle #right .grid > div.green > div,
+#page #middle #left .grid > div > div.green,
+#page #middle #center .grid > div > div.green,
+#page #middle #right .grid > div > div.green,
+#page #middle #left .box.green,
+#page #middle #center .box.green,
+#page #middle #right .box.green,
+#page #middle #left img.green,
+#page #middle #center img.green,
+#page #middle #right img.green {
+  background-color: #27ae60;
+}
+#page #middle #left .box.green,
+#page #middle #center .box.green,
+#page #middle #right .box.green,
+#page #middle #left .grid.green > div > div,
+#page #middle #center .grid.green > div > div,
+#page #middle #right .grid.green > div > div,
+#page #middle #left .grid > div.green > div,
+#page #middle #center .grid > div.green > div,
+#page #middle #right .grid > div.green > div,
+#page #middle #left .grid > div > div.green,
+#page #middle #center .grid > div > div.green,
+#page #middle #right .grid > div > div.green,
+#page #middle #left input[type=button].green,
+#page #middle #center input[type=button].green,
+#page #middle #right input[type=button].green {
+  color: #fff;
+}
+#page #middle #left .box.green a,
+#page #middle #center .box.green a,
+#page #middle #right .box.green a,
+#page #middle #left .grid.green > div > div a,
+#page #middle #center .grid.green > div > div a,
+#page #middle #right .grid.green > div > div a,
+#page #middle #left .grid > div.green > div a,
+#page #middle #center .grid > div.green > div a,
+#page #middle #right .grid > div.green > div a,
+#page #middle #left .grid > div > div.green a,
+#page #middle #center .grid > div > div.green a,
+#page #middle #right .grid > div > div.green a,
+#page #middle #left input[type=button].green a,
+#page #middle #center input[type=button].green a,
+#page #middle #right input[type=button].green a {
+  color: #fff;
+}
+#page #middle #left input[type=button].green:hover,
+#page #middle #center input[type=button].green:hover,
+#page #middle #right input[type=button].green:hover {
+  background-color: #2ecc71;
+  color: #000;
+}

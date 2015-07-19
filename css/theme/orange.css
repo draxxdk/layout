@@ -1,0 +1,60 @@
+﻿#page #middle #left input[type=button].orange,
+#page #middle #center input[type=button].orange,
+#page #middle #right input[type=button].orange,
+#page #middle #left .grid.orange > div > div,
+#page #middle #center .grid.orange > div > div,
+#page #middle #right .grid.orange > div > div,
+#page #middle #left .grid > div.orange > div,
+#page #middle #center .grid > div.orange > div,
+#page #middle #right .grid > div.orange > div,
+#page #middle #left .grid > div > div.orange,
+#page #middle #center .grid > div > div.orange,
+#page #middle #right .grid > div > div.orange,
+#page #middle #left .box.orange,
+#page #middle #center .box.orange,
+#page #middle #right .box.orange,
+#page #middle #left img.orange,
+#page #middle #center img.orange,
+#page #middle #right img.orange {
+  background-color: #d35400;
+}
+#page #middle #left .box.orange,
+#page #middle #center .box.orange,
+#page #middle #right .box.orange,
+#page #middle #left .grid.orange > div > div,
+#page #middle #center .grid.orange > div > div,
+#page #middle #right .grid.orange > div > div,
+#page #middle #left .grid > div.orange > div,
+#page #middle #center .grid > div.orange > div,
+#page #middle #right .grid > div.orange > div,
+#page #middle #left .grid > div > div.orange,
+#page #middle #center .grid > div > div.orange,
+#page #middle #right .grid > div > div.orange,
+#page #middle #left input[type=button].orange,
+#page #middle #center input[type=button].orange,
+#page #middle #right input[type=button].orange {
+  color: #fff;
+}
+#page #middle #left .box.orange a,
+#page #middle #center .box.orange a,
+#page #middle #right .box.orange a,
+#page #middle #left .grid.orange > div > div a,
+#page #middle #center .grid.orange > div > div a,
+#page #middle #right .grid.orange > div > div a,
+#page #middle #left .grid > div.orange > div a,
+#page #middle #center .grid > div.orange > div a,
+#page #middle #right .grid > div.orange > div a,
+#page #middle #left .grid > div > div.orange a,
+#page #middle #center .grid > div > div.orange a,
+#page #middle #right .grid > div > div.orange a,
+#page #middle #left input[type=button].orange a,
+#page #middle #center input[type=button].orange a,
+#page #middle #right input[type=button].orange a {
+  color: #fff;
+}
+#page #middle #left input[type=button].orange:hover,
+#page #middle #center input[type=button].orange:hover,
+#page #middle #right input[type=button].orange:hover {
+  background-color: #e67e22;
+  color: #000;
+}
