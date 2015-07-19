@@ -79,6 +79,8 @@ Features
 <p>A CSS media query puts sidebars on top of center instead of next to it, when the window width gets small</p>
 <img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image2.jpg" alt="Media query putting sidebars on top of center instead of besides it" />
 <h3>Right sidebar and footer hidden</h3>
+<p>The grid with dynamic width does not have enough room to display the cells with 33% width as cells, so it makes them into rows instead.</p>
 <img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image3.jpg" alt="Right sidebar and footer hidden" />
 <h3>Center shown</h3>
+<p>The layout can change from showing everything to only showing #center by clicking on the button that are in the top right corner of #center</p>
 <img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image4.jpg" alt="Center shown" />
