@@ -1,7 +1,6 @@
-The Holy Grail <sup>(kinda)</sup>
-================================
+<h1>The Holy Grail <sup>(kinda)</sup></h1>
 
-Simple clean layout made with HTML5 and CSS3
+<p>Simple clean layout made with HTML5 and CSS3</p>
 
 <table>
 <thead>
@@ -72,8 +71,12 @@ Features
 </tbody>
 </table>
 
-Screenshots
+<h2>Screenshots</h2>
+<h3>All shown</h3>
 <img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image1.jpg" alt="All shown" />
+<h3>Media query putting sidebars on top of center instead of besides it</h3>
 <img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image2.jpg" alt="Media query putting sidebars on top of center instead of besides it" />
+<h3>Right sidebar and footer hidden</h3>
 <img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image3.jpg" alt="Right sidebar and footer hidden" />
+<h3>Center shown</h3>
 <img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image4.jpg" alt="Center shown" />
