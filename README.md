@@ -73,4 +73,4 @@ Features
 </table>
 
 Screenshots
-<img src="img/screenshot/image1.jpeg" />
+<img src="/draxxdk/layout/blob/master/img/screenshot/Image1.jpg?raw=true" alt="Image1.jpg">
