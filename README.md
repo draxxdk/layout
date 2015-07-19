@@ -72,7 +72,16 @@ Features
 </table>
 
 <h2>Screenshots</h2>
-<p>In the screenshots below i have used 6 color themes to style different parts of the content. The default colors are gray for buttons and transparent for grids. To get the boxes in the grid to become gray just add .default to the grid and it will apply gray background to all that doesn't have a different theme-color applied to it.</p>
+<p>In the screenshots below i have used 6 color-themes to style different parts of the content in different ways.<br />
+If you don't want some or all of these color-themes, then just remove the import to it in layout.css</p>
+<pre><code>
+@import url('theme/blue.css');
+@import url('theme/green.css');
+@import url('theme/orange.css');
+@import url('theme/purple.css');
+@import url('theme/red.css');
+@import url('theme/yellow.css');
+</code></pre>
 <h3>All shown</h3>
 <p>The grid with dynamic width has enough width here to be display all cells as cells instead of rows.</p>
 <img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image1.jpg" alt="All shown" />
