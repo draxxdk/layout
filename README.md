@@ -74,3 +74,6 @@ Features
 
 Screenshots
 <img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image1.jpg" />
+<img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image2.jpg" />
+<img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image3.jpg" />
+<img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image4.jpg" />
