@@ -94,15 +94,7 @@ If you don't want some or all of these color-themes, then just remove the import
 @import url('theme/red.css');
 @import url('theme/yellow.css');
 </code></pre>
-<h3>All shown</h3>
-<p>The grid with dynamic width has enough width here to be display all cells as cells instead of rows.</p>
-<img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image1.jpg" alt="All shown" />
-<h3>Media queries</h3>
-<p>A CSS media query puts sidebars on top of center instead of next to it, when the window width gets small</p>
-<img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image2.jpg" alt="Media query putting sidebars on top of center instead of besides it" />
-<h3>Right sidebar and footer hidden</h3>
-<p>The grid with dynamic width does not have enough room to display the cells with 33% width as cells, so it makes them into rows instead.</p>
-<img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image3.jpg" alt="Right sidebar and footer hidden" />
-<h3>Center shown</h3>
-<p>The layout can change from showing everything to only showing #center by clicking on the button that are in the top right corner of #center</p>
-<img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshot/Image4.jpg" alt="Center shown" />
+
+<img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshots/Image1.png" alt="" />
+<img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshots/Image2.png" alt="" />
+<img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshots/Image3.png" alt="" />
