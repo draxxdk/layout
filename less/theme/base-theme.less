@@ -1,6 +1,19 @@
 ﻿@import "../mixins";
-@border-color: #808080;
+
+@light-border-color: #ccc;
+@light-bg-1: #fff;
+@light-bg-2: #eee;
+@light-bg-3: #e5e5e5;
+@light-color: #000;
+
+@dark-border-color: #303030;
+@dark-bg-1: #505050;
+@dark-bg-2: #404040;
+@dark-bg-3: #353535;
+@dark-color: #fff;
+
 @width: 1px;
+
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -8,7 +21,11 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #3b3b3b;
+    background-color: @dark-border-color;
+}
+
+body {
+    color: @light-color;
 }
 
 hr {
@@ -20,110 +37,34 @@ table {
 }
 
 #page #top,
-#page #bottom,
-#page #middle h2 a:hover,
-#page #middle h2 a:hover {
-    background-color: #3b3b3b;
-}
-
-body {
-    background-color: #808080;
+#page #bottom {
+    background-color: @light-bg-3;
 }
 
 a {
-    color: #000;
-}
-
-#page #top,
-#page #bottom {
-    color: #fff;
+    color: @light-color;
 }
 
 #page #top {
-    border-bottom: @width solid @border-color;
+    border-bottom: @width solid @light-border-color;
 }
 
 #page #bottom {
-    border-top: @width solid @border-color;
-}
-
-#left > .table {
-    border-right: @width solid @border-color;
-}
-#right > .table {
-    border-left: @width solid @border-color;
-}
-
-#page #middle h2,
-#page #middle input[type=button],
-#page #middle table thead tr th {
-    background-color: #aaa;
-}
-
-#page #middle input[type=button]:hover {
-    background-color: #ccc;
+    border-top: @width solid @light-border-color;
 }
 
 #page {
     #middle {
-        #left .box.default,
-        #right .box.default,
-        #left .grid.default > div > div,
-        #right .grid.default > div > div,
-        #left hr,
-        #right hr,
-        #center,
-        #left table,
-        #right table,
-        table tbody tr:nth-child(even) th,
-        table tbody tr:nth-child(even) td {
-            background-color: #fff;
+        > #loading {
+            background-color: @light-bg-1;
         }
 
-        #center .grid,
-        #center .grid > h3,
-        #center .grid > div > div {
-            border-color: #fff;
+        #left.small > .table {
+            border-right: @width solid @dark-border-color;
         }
 
-        h2 a,
-        h2 a,
-        #center .box.default,
-        #center .grid.default > div > div,
-        #center hr,
-        #left > .table,
-        #right > .table,
-        #center table,
-        table tbody tr:nth-child(odd) th,
-        table tbody tr:nth-child(odd) td {
-            background-color: #ddd;
-        }
-
-        #left .grid,
-        #right .grid,
-        #left .grid > h3,
-        #right .grid > h3,
-        #left .grid > div > div,
-        #right .grid > div > div {
-            border-color: #ddd;
-        }
-
-        h2 a {
-            .border-radius(13px);
-        }
-
-        #left {
-            > .table:before {
-                right: -5px;
-                background-image: linear-gradient( to right, #808080, transparent );
-            }
-        }
-
-        #right {
-            > .table:before {
-                left: -5px;
-                background-image: linear-gradient( to left, #808080, transparent );
-            }
+        #right.small > .table {
+            border-left: @width solid @dark-border-color;
         }
 
         .buttons {
@@ -131,6 +72,136 @@ a {
                 .border-radius(5px);
                 .box-shadow( 0px 0px 5px 1px rgba(0,0,0,0.75));
             }
+        }
+
+        #left.small,
+        #right.small {
+
+            ::-webkit-scrollbar-thumb {
+                background-color: @light-border-color;
+            }
+
+            a,
+            input[type=button] {
+                color: @dark-color;
+            }
+
+            > .table {
+                background-color: @dark-bg-1;
+                color: @dark-color;
+            }
+
+            input[type=button]:hover,
+            h2,
+            table thead tr th {
+                background-color: @dark-bg-3;
+            }
+
+            .box.default,
+            .grid.default > div > div,
+            table tbody tr:nth-child(even) th,
+            table tbody tr:nth-child(even) td {
+                background-color: @dark-bg-2;
+            }
+            
+            input[type=button],
+            table tbody tr:nth-child(odd) th,
+            table tbody tr:nth-child(odd) td {
+                background-color: @dark-bg-1;
+            }
+
+            .grid,
+            .grid > h3,
+            .grid > div > div {
+                border-color: @dark-bg-1;
+            }
+
+            hr,
+            table {
+                background-color: @dark-border-color;
+            }
+
+            h2 {
+                border-bottom: @width solid @dark-border-color;
+
+                a {
+                    background-color: @dark-bg-1;
+                    border: @width solid @dark-border-color;
+                }
+            }
+        }
+
+        #left:not(.small) > .table,
+        #right:not(.small) > .table,
+        #center {
+            background-color: #fff;
+
+            input[type=button]:hover,
+            h2,
+            table thead tr th {
+                background-color: @light-bg-3;
+            }
+
+            .box.default,
+            .grid.default > div > div,
+            table tbody tr:nth-child(even) th,
+            table tbody tr:nth-child(even) td {
+                background-color: @light-bg-2;
+            }
+            
+            input[type=button],
+            table tbody tr:nth-child(odd) th,
+            table tbody tr:nth-child(odd) td {
+                background-color: @light-bg-1;
+            }
+
+            .grid,
+            .grid > h3,
+            .grid > div > div {
+                border-color: @light-bg-1;
+            }
+
+            hr,
+            table {
+                background-color: @light-border-color;
+            }
+
+            h2 {
+                border-bottom: @width solid @light-border-color;
+
+                a {
+                    background-color: @light-bg-1;
+                    border: @width solid @light-border-color;
+                }
+
+                a:hover {
+                    background-color: @dark-bg-1;
+                }
+            }
+        }
+    }
+
+    #middle.padding {
+        #left:not(.small) > .table,
+        #right:not(.small) > .table,
+        #center {
+            border: @width solid @light-border-color;
+        }
+
+        #left.small,
+        #right.small {
+            border-top: @width solid @dark-border-color;
+            border-bottom: @width solid @dark-border-color;
+        }
+    }
+
+    #middle:not(.padding) {
+        #left:not(.small) > .table {
+            border-right: @width solid @light-border-color;
+        }
+
+        #right:not(.small) > .table {
+            border-left: @width solid @light-border-color;
         }
     }
 }

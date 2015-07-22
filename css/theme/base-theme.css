@@ -3,7 +3,10 @@
   height: 5px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #3b3b3b;
+  background-color: #303030;
+}
+body {
+  color: #000000;
 }
 hr {
   height: 1px;
@@ -12,94 +15,26 @@ table {
   border-spacing: 1px;
 }
 #page #top,
-#page #bottom,
-#page #middle h2 a:hover,
-#page #middle h2 a:hover {
-  background-color: #3b3b3b;
-}
-body {
-  background-color: #808080;
+#page #bottom {
+  background-color: #e5e5e5;
 }
 a {
-  color: #000;
-}
-#page #top,
-#page #bottom {
-  color: #fff;
+  color: #000000;
 }
 #page #top {
-  border-bottom: 1px solid #808080;
+  border-bottom: 1px solid #cccccc;
 }
 #page #bottom {
-  border-top: 1px solid #808080;
+  border-top: 1px solid #cccccc;
 }
-#left > .table {
-  border-right: 1px solid #808080;
+#page #middle > #loading {
+  background-color: #ffffff;
 }
-#right > .table {
-  border-left: 1px solid #808080;
+#page #middle #left.small > .table {
+  border-right: 1px solid #303030;
 }
-#page #middle h2,
-#page #middle input[type=button],
-#page #middle table thead tr th {
-  background-color: #aaa;
-}
-#page #middle input[type=button]:hover {
-  background-color: #ccc;
-}
-#page #middle #left .box.default,
-#page #middle #right .box.default,
-#page #middle #left .grid.default > div > div,
-#page #middle #right .grid.default > div > div,
-#page #middle #left hr,
-#page #middle #right hr,
-#page #middle #center,
-#page #middle #left table,
-#page #middle #right table,
-#page #middle table tbody tr:nth-child(even) th,
-#page #middle table tbody tr:nth-child(even) td {
-  background-color: #fff;
-}
-#page #middle #center .grid,
-#page #middle #center .grid > h3,
-#page #middle #center .grid > div > div {
-  border-color: #fff;
-}
-#page #middle h2 a,
-#page #middle h2 a,
-#page #middle #center .box.default,
-#page #middle #center .grid.default > div > div,
-#page #middle #center hr,
-#page #middle #left > .table,
-#page #middle #right > .table,
-#page #middle #center table,
-#page #middle table tbody tr:nth-child(odd) th,
-#page #middle table tbody tr:nth-child(odd) td {
-  background-color: #ddd;
-}
-#page #middle #left .grid,
-#page #middle #right .grid,
-#page #middle #left .grid > h3,
-#page #middle #right .grid > h3,
-#page #middle #left .grid > div > div,
-#page #middle #right .grid > div > div {
-  border-color: #ddd;
-}
-#page #middle h2 a {
-  -webkit-border-radius: 13px;
-  -moz-border-radius: 13px;
-  border-radius: 13px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-#page #middle #left > .table:before {
-  right: -5px;
-  background-image: linear-gradient(to right, #808080, transparent);
-}
-#page #middle #right > .table:before {
-  left: -5px;
-  background-image: linear-gradient(to left, #808080, transparent);
+#page #middle #right.small > .table {
+  border-left: 1px solid #303030;
 }
 #page #middle .buttons input[type=button] {
   -webkit-border-radius: 5px;
@@ -111,4 +46,160 @@ a {
   -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+}
+#page #middle #left.small ::-webkit-scrollbar-thumb,
+#page #middle #right.small ::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+}
+#page #middle #left.small a,
+#page #middle #right.small a,
+#page #middle #left.small input[type=button],
+#page #middle #right.small input[type=button] {
+  color: #ffffff;
+}
+#page #middle #left.small > .table,
+#page #middle #right.small > .table {
+  background-color: #505050;
+  color: #ffffff;
+}
+#page #middle #left.small input[type=button]:hover,
+#page #middle #right.small input[type=button]:hover,
+#page #middle #left.small h2,
+#page #middle #right.small h2,
+#page #middle #left.small table thead tr th,
+#page #middle #right.small table thead tr th {
+  background-color: #353535;
+}
+#page #middle #left.small .box.default,
+#page #middle #right.small .box.default,
+#page #middle #left.small .grid.default > div > div,
+#page #middle #right.small .grid.default > div > div,
+#page #middle #left.small table tbody tr:nth-child(even) th,
+#page #middle #right.small table tbody tr:nth-child(even) th,
+#page #middle #left.small table tbody tr:nth-child(even) td,
+#page #middle #right.small table tbody tr:nth-child(even) td {
+  background-color: #404040;
+}
+#page #middle #left.small input[type=button],
+#page #middle #right.small input[type=button],
+#page #middle #left.small table tbody tr:nth-child(odd) th,
+#page #middle #right.small table tbody tr:nth-child(odd) th,
+#page #middle #left.small table tbody tr:nth-child(odd) td,
+#page #middle #right.small table tbody tr:nth-child(odd) td {
+  background-color: #505050;
+}
+#page #middle #left.small .grid,
+#page #middle #right.small .grid,
+#page #middle #left.small .grid > h3,
+#page #middle #right.small .grid > h3,
+#page #middle #left.small .grid > div > div,
+#page #middle #right.small .grid > div > div {
+  border-color: #505050;
+}
+#page #middle #left.small hr,
+#page #middle #right.small hr,
+#page #middle #left.small table,
+#page #middle #right.small table {
+  background-color: #303030;
+}
+#page #middle #left.small h2,
+#page #middle #right.small h2 {
+  border-bottom: 1px solid #303030;
+}
+#page #middle #left.small h2 a,
+#page #middle #right.small h2 a {
+  background-color: #505050;
+  border: 1px solid #303030;
+}
+#page #middle #left:not(.small) > .table,
+#page #middle #right:not(.small) > .table,
+#page #middle #center {
+  background-color: #fff;
+}
+#page #middle #left:not(.small) > .table input[type=button]:hover,
+#page #middle #right:not(.small) > .table input[type=button]:hover,
+#page #middle #center input[type=button]:hover,
+#page #middle #left:not(.small) > .table h2,
+#page #middle #right:not(.small) > .table h2,
+#page #middle #center h2,
+#page #middle #left:not(.small) > .table table thead tr th,
+#page #middle #right:not(.small) > .table table thead tr th,
+#page #middle #center table thead tr th {
+  background-color: #e5e5e5;
+}
+#page #middle #left:not(.small) > .table .box.default,
+#page #middle #right:not(.small) > .table .box.default,
+#page #middle #center .box.default,
+#page #middle #left:not(.small) > .table .grid.default > div > div,
+#page #middle #right:not(.small) > .table .grid.default > div > div,
+#page #middle #center .grid.default > div > div,
+#page #middle #left:not(.small) > .table table tbody tr:nth-child(even) th,
+#page #middle #right:not(.small) > .table table tbody tr:nth-child(even) th,
+#page #middle #center table tbody tr:nth-child(even) th,
+#page #middle #left:not(.small) > .table table tbody tr:nth-child(even) td,
+#page #middle #right:not(.small) > .table table tbody tr:nth-child(even) td,
+#page #middle #center table tbody tr:nth-child(even) td {
+  background-color: #eeeeee;
+}
+#page #middle #left:not(.small) > .table input[type=button],
+#page #middle #right:not(.small) > .table input[type=button],
+#page #middle #center input[type=button],
+#page #middle #left:not(.small) > .table table tbody tr:nth-child(odd) th,
+#page #middle #right:not(.small) > .table table tbody tr:nth-child(odd) th,
+#page #middle #center table tbody tr:nth-child(odd) th,
+#page #middle #left:not(.small) > .table table tbody tr:nth-child(odd) td,
+#page #middle #right:not(.small) > .table table tbody tr:nth-child(odd) td,
+#page #middle #center table tbody tr:nth-child(odd) td {
+  background-color: #ffffff;
+}
+#page #middle #left:not(.small) > .table .grid,
+#page #middle #right:not(.small) > .table .grid,
+#page #middle #center .grid,
+#page #middle #left:not(.small) > .table .grid > h3,
+#page #middle #right:not(.small) > .table .grid > h3,
+#page #middle #center .grid > h3,
+#page #middle #left:not(.small) > .table .grid > div > div,
+#page #middle #right:not(.small) > .table .grid > div > div,
+#page #middle #center .grid > div > div {
+  border-color: #ffffff;
+}
+#page #middle #left:not(.small) > .table hr,
+#page #middle #right:not(.small) > .table hr,
+#page #middle #center hr,
+#page #middle #left:not(.small) > .table table,
+#page #middle #right:not(.small) > .table table,
+#page #middle #center table {
+  background-color: #cccccc;
+}
+#page #middle #left:not(.small) > .table h2,
+#page #middle #right:not(.small) > .table h2,
+#page #middle #center h2 {
+  border-bottom: 1px solid #cccccc;
+}
+#page #middle #left:not(.small) > .table h2 a,
+#page #middle #right:not(.small) > .table h2 a,
+#page #middle #center h2 a {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+#page #middle #left:not(.small) > .table h2 a:hover,
+#page #middle #right:not(.small) > .table h2 a:hover,
+#page #middle #center h2 a:hover {
+  background-color: #505050;
+}
+#page #middle.padding #left:not(.small) > .table,
+#page #middle.padding #right:not(.small) > .table,
+#page #middle.padding #center {
+  border: 1px solid #cccccc;
+}
+#page #middle.padding #left.small,
+#page #middle.padding #right.small {
+  border-top: 1px solid #303030;
+  border-bottom: 1px solid #303030;
+}
+#page #middle:not(.padding) #left:not(.small) > .table {
+  border-right: 1px solid #cccccc;
+}
+#page #middle:not(.padding) #right:not(.small) > .table {
+  border-left: 1px solid #cccccc;
 }

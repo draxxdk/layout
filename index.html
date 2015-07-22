@@ -4,18 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
     <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/theme/base-theme.css" id="stylesheet-theme" />
     <!--<link rel="stylesheet/less" href="less/layout.less" />
-    <link rel="stylesheet/less" href="less/theme/base-theme.less" id="stylesheet-theme" />-->
-
-    <script src="js/less-1.5.1.min.js"></script>
+    <script src="js/less-1.5.1.min.js"></script>-->
 </head>
 <body>
     <div id="page" class="table">
         <div id="top">
             <h1>The Holy Grail <sup>(kinda)</sup></h1>
         </div>
-        <div id="middle" class="row expand-height">
+        <div id="middle" class="row expand-height padding">
             <div class="table">
                 <div id="loading"><span></span></div>
                 <div id="left" class="cell hidden">
@@ -63,12 +60,13 @@
                         <div class="row expand-height">
                             <div class="scroll">
                                 <div class="buttons">
+                                    <input type="button" value="Button" />
                                     <input type="button" id="toggle-left" value="Toggle left" class="green" />
                                     <input type="button" id="toggle-right" value="Toggle right" class="blue" />
                                     <input type="button" id="toggle-top" value="Toggle top" class="purple" />
                                     <input type="button" id="toggle-bottom" value="Toggle bottom" class="yellow" />
                                     <input type="button" id="toggle-page" value="Toggle page" class="orange" />
-                                    <input type="button" id="toggle-theme" value="Toggle theme" class="red" />
+                                    <input type="button" id="toggle-padding" value="Toggle padding" class="red" />
                                 </div>
                                 <hr />
                                 <div class="box">
@@ -83,7 +81,7 @@
                                                 <th>Float and calc()</th>
                                                 <td colspan="2">
                                                     It is possible to make layouts without polluting you CSS with 100's of floats and calc()'s.<br />
-                                                    This layout uses zero calc() and only 2 float.
+                                                    This layout uses 2 calc() and 2 float.
                                                 </td>
                                             </tr>
                                             <tr>
@@ -123,12 +121,9 @@
                                                 <td colspan="2">Border and background-color is applied to the first child element in sidebars instead of the sidebars themselves to ensure that there won't be any sub-pixel rendering issues.</td>
                                             </tr>
                                             <tr>
-                                                <th>CSS media queries</th>
-                                                <td colspan="2">When the layout is smaller then a certain width, the sidebars will change from being next to center to being on top of it.</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Better box-shadow</th>
-                                                <td colspan="2">Instead of using regular box-shadow that rounds the shadows at corners, the sidebars uses gradients without rounded corners.</td>
+                                                <th>JS media queries</th>
+                                                <td colspan="2">When the layout is smaller then a certain width, the sidebars will change from being next to center to being on top of it.<br />
+                                                This is accomplished by adding or removing a class with JS.</td>
                                             </tr>
                                             <tr>
                                                 <th>Cross-browser</th>
@@ -148,69 +143,73 @@
                                             I have added a webkit targetet CSS hack that sets overflow to scroll for webkit.<br />
                                             When Google or someone else finds a solution for this, it will be fixed in this layout.
                                         </li>
+                                        <li>
+                                            IE has problems with 100% height of div inside div that has display:table-cell.<br />
+                                            This causes scrollbar to show up dirrectly under the content within the grid instead of nicely alligned at the bottom.
+                                        </li>
                                     </ul>
                                 </div>
                                 <hr />
                                 <div class="grid green padding dynamic">
                                     <h3>Dynamic width</h3>
                                     <div class="items-3" data-width="600">
-                                        <div><p>33.3%</p></div>
-                                        <div><p>33.3%</p></div>
-                                        <div><p>33.3%</p></div>
+                                        <div><div><p>33.3%</p></div></div>
+                                        <div><div><p>33.3%</p></div></div>
+                                        <div><div><p>33.3%</p></div></div>
                                     </div>
                                     <div class="items-2" data-width="500">
-                                        <div><p>50%</p></div>
-                                        <div><p>50%</p></div>
+                                        <div><div><p>50%</p></div></div>
+                                        <div><div><p>50%</p></div></div>
                                     </div>
                                 </div>
                                 <hr />
                                 <div class="grid default padding">
                                     <div class="items-1">
-                                        <div><p>100%</p></div>
+                                        <div><div><p>100%</p></div></div>
                                     </div>
                                     <div class="items-2 yellow">
-                                        <div><p>50%</p></div>
-                                        <div><p>50%</p></div>
+                                        <div><div><p>50%</p></div></div>
+                                        <div><div><p>50%</p></div></div>
                                     </div>
                                     <div class="items-3">
-                                        <div class="red"><p>33.3%</p></div>
-                                        <div class="blue"><p>33.3%</p></div>
-                                        <div class="green">
+                                        <div class="red"><div><p>33.3%</p></div></div>
+                                        <div class="blue"><div><p>33.3%</p></div></div>
+                                        <div class="green"><div>
                                             <p>
                                                 33.3%<br />
                                                 Integer faucibus quam convallis ante luctus aliquam.
                                             </p>
-                                        </div>
+                                        </div></div>
                                     </div>
                                     <div class="items-3">
-                                        <div><p>33.3%</p></div>
-                                        <div class="width-66"><p>66.6%</p></div>
+                                        <div><div><p>33.3%</p></div></div>
+                                        <div class="width-66"><div><p>66.6%</p></div></div>
                                     </div>
                                     <div class="items-4">
-                                        <div class="purple"><p>25%</p></div>
-                                        <div><p>25%</p></div>
-                                        <div>
+                                        <div class="purple"><div><p>25%</p></div></div>
+                                        <div><div><p>25%</p></div></div>
+                                        <div><div>
                                             <p>25%</p>
                                             <div class="img">
                                                 <img src="img/html5.png" class="padding orange fill-width" />
                                             </div>
-                                        </div>
-                                        <div>
+                                        </div></div>
+                                        <div><div>
                                             <h3>Hey</h3>
                                             <p>
                                                 25%<br /><br />
                                                 In a mi vitae neque viverra venenatis in egestas diam. Sed in consequat nisl. Sed mattis, tellus sagittis pellentesque semper, leo nisi lacinia erat, quis tincidunt erat massa quis lacus.
                                             </p>
-                                        </div>
+                                        </div></div>
                                     </div>
                                     <div class="items-4">
-                                        <div><p>25%</p></div>
-                                        <div><p>25%</p></div>
-                                        <div class="width-50"><p>50%</p></div>
+                                        <div><div><p>25%</p></div></div>
+                                        <div><div><p>25%</p></div></div>
+                                        <div class="width-50"><div><p>50%</p></div></div>
                                     </div>
                                     <div class="items-4">
-                                        <div><p>25%</p></div>
-                                        <div class="width-75"><p>75%</p></div>
+                                        <div><div><p>25%</p></div></div>
+                                        <div class="width-75"><div><p>75%</p></div></div>
                                     </div>
                                 </div>
                                 <hr />
@@ -247,11 +246,88 @@
                         </h2>
                         <div class="row expand-height">
                             <div class="scroll">
+                                <div class="buttons">
+                                    <input type="button" value="Button" />
+                                </div>
+                                <hr />
                                 <div class="box">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>a</th>
+                                                <th>b</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>c</td>
+                                                <td>d</td>
+                                            </tr>
+                                            <tr>
+                                                <td>e</td>
+                                                <td>f</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="grid default padding">
+                                    <div class="items-1">
+                                        <div><div><p>100%</p></div></div>
+                                    </div>
+                                    <div class="items-2 yellow">
+                                        <div><div><p>50%</p></div></div>
+                                        <div><div><p>50%</p></div></div>
+                                    </div>
+                                    <div class="items-3">
+                                        <div class="red"><div><p>33.3%</p></div></div>
+                                        <div class="blue"><div><p>33.3%</p></div></div>
+                                        <div class="green">
+                                            <div>
+                                                <p>
+                                                    33.3%<br />
+                                                    Integer faucibus quam convallis ante luctus aliquam.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="items-3">
+                                        <div><div><p>33.3%</p></div></div>
+                                        <div class="width-66"><div><p>66.6%</p></div></div>
+                                    </div>
+                                    <div class="items-3">
+                                        <div class="purple"><div><p>33.3%</p></div></div>
+                                        <div>
+                                            <div>
+                                                <p>33.3%</p>
+                                                <div class="img">
+                                                    <img src="img/html5.png" class="padding orange fill-width" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h3>Hey</h3>
+                                                <p>
+                                                    33.3%<br /><br />
+                                                    In a mi vitae neque viverra venenatis in egestas diam. Sed in consequat nisl. Sed mattis, tellus sagittis pellentesque semper, leo nisi lacinia erat, quis tincidunt erat massa quis lacus.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="items-4">
+                                        <div><div><p>25%</p></div></div>
+                                        <div><div><p>25%</p></div></div>
+                                        <div class="width-50"><div><p>50%</p></div></div>
+                                    </div>
+                                    <div class="items-4">
+                                        <div><div><p>25%</p></div></div>
+                                        <div class="width-75"><div><p>75%</p></div></div>
+                                    </div>
+                                </div>
+                                <div class="box default padding">
                                     <h3>HTML5</h3>
                                     <img src="img/html5.png" class="padding orange" />
                                 </div>
-                                <hr />
                                 <div class="box">
                                     <h3>CSS3</h3>
                                     <img src="img/css3.png" class="padding blue" />
@@ -303,8 +379,8 @@
                 toggleCenter();
             });
 
-            $("#toggle-theme").click(function () {
-                toggleTheme();
+            $("#toggle-padding").click(function () {
+                togglePadding();
             });
         });
     </script>

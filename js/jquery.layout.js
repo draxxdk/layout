@@ -6,6 +6,7 @@
         left = $("div[id=left]").eq(0),
         right = $("div[id=right]").eq(0),
         center_headline = center.find("h2").eq(0),
+        middle = $("div[id=middle]").eq(0),
         loading = $("div[id=loading]").eq(0),
         dynamicGrids = $(".dynamic"),
         initial = true,
@@ -14,9 +15,11 @@
         bottomIsHidden,
         leftIsHidden,
         rightIsHidden,
-        pageIsCenter;
+        pageIsCenter,
+        windowMinWidth = 700,
+        forcedHidden = false;
 
-    updateDynamicGrids = function () {
+    updateLayout = function () {
         dynamicGrids.each(function () {
             var width = $(this).outerWidth()
             $(this).find("> [data-width]").each(function () {
@@ -28,22 +31,60 @@
             });
         });
 
-        if (initial = true) {
+        if (initial || $(window).width() <= windowMinWidth) {
+            if (left.length > 0 && !left.hasClass("hidden") && right.length > 0 && !right.hasClass("hidden")) {
+                leftIsHidden = left.hasClass("hidden");
+                rightIsHidden = right.hasClass("hidden");
+                left.addClass("hidden");
+                right.addClass("hidden");
+                forcedHidden = true;
+            }
+        }
+        // pure JS media queries here to ensure zero flickering
+        if ($(window).width() <= windowMinWidth) {
+            if (left.length > 0) {
+                left.addClass("small");
+            }
+            if (right.length > 0) {
+                right.addClass("small");
+            }
+        } else {
+            if (left.length > 0) {
+                left.removeClass("small");
+            }
+            if (right.length > 0) {
+                right.removeClass("small");
+            }
+            if (forcedHidden) {
+                if (!leftIsHidden) {
+                    left.removeClass("hidden");
+                }
+                if (!rightIsHidden) {
+                    right.removeClass("hidden");
+                }
+                forcedHidden = false;
+            }
+        }
+        if (initial) {
             initial = false;
-            dynamicGrids.show();
             loading.hide();
         }
     }
+
+    updateLayout();
 
     $(window).resize(function () {
         if (timeout != null) {
             clearTimeout(timeout);
         }
         timeout = setTimeout(function () {
-            updateDynamicGrids();
+            updateLayout();
         }, 50);
     });
-    updateDynamicGrids();
+
+    togglePadding = function () {
+        middle.toggleClass("padding");
+    }
 
     // show/hide header
     toggleTop = function () {
@@ -63,43 +104,40 @@
         }
     }
 
-
     // switch between full width layout and centered layout
     togglePage = function () {
         page.toggleClass("center");
-        updateDynamicGrids();
+        updateLayout();
     }
 
     // show/hide left sidebar
     toggleLeft = function () {
         if (left.length > 0) {
-            left.toggleClass("hidden");
+            leftIsHidden = !left.hasClass("hidden");
+            if (right.length > 0 && left.hasClass("hidden") && $(window).width() <= windowMinWidth) {
+                right.addClass("hidden");
+            }
+            left.toggleClass("hidden")
         } else {
             alert("Left doesn't exist");
         }
-        updateDynamicGrids();
+        forcedHidden = false;
+        updateLayout();
     }
 
     // show/hide right sidebar
     toggleRight = function () {
         if (right.length > 0) {
+            leftIsHidden = !right.hasClass("hidden");
+            if (left.length > 0 && right.hasClass("hidden") && $(window).width() <= windowMinWidth) {
+                left.addClass("hidden");
+            }
             right.toggleClass("hidden");
         } else {
             alert("Right doesn't exist");
         }
-        updateDynamicGrids();
-    }
-
-    var theme = true;
-    // switch between base themes
-    toggleTheme = function () {
-        if(theme) {
-            $("#stylesheet-theme").attr("href", "css/theme/base-theme-github.css");
-        } else {
-            $("#stylesheet-theme").attr("href", "css/theme/base-theme.css");
-        }
-        theme = !theme;
-        updateDynamicGrids();
+        forcedHidden = false;
+        updateLayout();
     }
 
     toggleCenter = function () {
@@ -142,6 +180,7 @@
             page.removeClass("center");
         }
         $("#toggle-center").toggleClass("collapse");
-        updateDynamicGrids();
+        forcedHidden = false;
+        updateLayout();
     }
 });
