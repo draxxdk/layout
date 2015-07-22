@@ -94,7 +94,12 @@ If you don't want some or all of these color-themes, then just remove the import
 @import url('theme/red.css');
 @import url('theme/yellow.css');
 </code></pre>
-
+<h3>Media query not active</h3>
+<p>Min-width for media query set to 700 in JS.</p>
 <img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshots/Image1.png" alt="" />
+<h3>Media query active</h3>
+<p>Min-width for media query set to 500 in JS.</p>
 <img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshots/Image2.png" alt="" />
+<h3>Padding toggled</h3>
+<p>Padding for middle sections can be toggled by adding .padding to #middle or by clicking "Toggle padding" button.</p>
 <img src="https://raw.githubusercontent.com/draxxdk/layout/master/img/screenshots/Image3.png" alt="" />
