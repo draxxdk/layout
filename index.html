@@ -73,61 +73,68 @@
                                     <table>
                                         <thead>
                                             <tr>
-                                                <th colspan="3"><h3>Features</h3></th>
+                                                <th colspan="2"><h3>Features</h3></th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <th>Float and calc()</th>
-                                                <td colspan="2">
+                                                <td>
                                                     It is possible to make layouts without polluting you CSS with 100's of floats and calc()'s.<br />
-                                                    This layout uses 2 calc() and 2 float.
+                                                    This layout uses calc() in combination with transform to center a loading icon and uses float to align buttons correctly next to each other and to fix a sub-pixel rendering problem for right sidebar.
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <th>Dynamic heights</th>
-                                                <td colspan="2">The layout sections #left, #center and #right takes available height. If top or bottom section changes height, middle section just gets bigger or smaller, without any javascript involved.</td>
+                                                <td>The layout sections #left, #center and #right takes available height. If top or bottom section changes height, middle section just gets bigger or smaller, without any javascript involved.</td>
                                             </tr>
                                             <tr>
                                                 <th>Dynamic widths</th>
-                                                <td colspan="2">The width for #left and #right can be individually set in for example: px, %, em.</td>
+                                                <td>The width for #left and #right can be individually set in for example: px, %, em.</td>
                                             </tr>
                                             <tr>
                                                 <th>Grid</th>
-                                                <td colspan="2">Simple and powerful grid. cells in a grid row all expands based on the heightest cell.</td>
+                                                <td>Simple and powerful grid. cells in a grid row all expands based on the heightest cell.<br />
+                                                h3 and p has overflow:auto to ensure that long words won't ruin the layout.</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Dynamic spacing</th>
+                                                <td>Spacing can be added to #left, #center and #right by adding the class .padding on #middle. Use the button "Toggle padding" to see it in action.</td>
                                             </tr>
                                             <tr>
                                                 <th>Minimal jQuery</th>
-                                                <td colspan="2">The layout uses jQuery to toggle different layout sections and to make advanced media queries for dynamic grids.</td>
+                                                <td>The layout uses jQuery to toggle different layout sections and to make advanced media queries for dynamic grids.</td>
                                             </tr>
                                             <tr>
                                                 <th>Ellipsis headlines</th>
-                                                <td colspan="2">h2 has ellipsis effect on to ensure they stay on one line. It can easely be changed in CSS without causing any bugs for the layout.</td>
+                                                <td>h2 has ellipsis effect on to ensure they stay on one line. It can easely be changed in CSS without causing any bugs for the layout.</td>
                                             </tr>
                                             <tr>
                                                 <th>Initial states</th>
-                                                <td colspan="2">The layout sections #top, #bottom, #left and #right can be set to initial hidden by adding .hidden to them.</td>
+                                                <td>The layout sections #top, #bottom, #left and #right can be set to initial hidden by adding .hidden to them.</td>
                                             </tr>
                                             <tr>
                                                 <th>Solid layout</th>
-                                                <td colspan="2">The layout will still work if you remove any or all of these layout sections: #top, #bottom, #left and #right.</td>
+                                                <td>The layout will still work if you remove any or all of these layout sections: #top, #bottom, #left and #right.</td>
                                             </tr>
                                             <tr>
                                                 <th>Full-width or centered layout</th>
-                                                <td colspan="2">By default the layout is full-width, but can be be centered with a max width by adding .center to #page</td>
+                                                <td>By default the layout is full-width, but can be be centered with a max width by adding .center to #page</td>
                                             </tr>
                                             <tr>
                                                 <th>No sub-pixel rendering problems</th>
-                                                <td colspan="2">Border and background-color is applied to the first child element in sidebars instead of the sidebars themselves to ensure that there won't be any sub-pixel rendering issues.</td>
+                                                <td>Border and background-color is applied to the first child element in sidebars instead of the sidebars themselves to ensure that there won't be any sub-pixel rendering issues.</td>
                                             </tr>
                                             <tr>
                                                 <th>JS media queries</th>
-                                                <td colspan="2">When the layout is smaller then a certain width, the sidebars will change from being next to center to being on top of it.<br />
-                                                This is accomplished by adding or removing a class with JS.</td>
+                                                <td>
+                                                    When the layout is smaller then a certain width, the sidebars will change from being next to center to being on top of it.<br />
+                                                    This is accomplished by adding or removing a class with JS.
+                                                </td>
                                             </tr>
                                             <tr>
                                                 <th>Cross-browser</th>
-                                                <td colspan="2">The layout looks the same in Chrome, Firefox and IE, other then the scrollbars, that only looks nice in Chrome.</td>
+                                                <td>The layout looks the same in Chrome, Firefox and IE, other then the scrollbars, that only looks nice in Chrome.</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -143,73 +150,63 @@
                                             I have added a webkit targetet CSS hack that sets overflow to scroll for webkit.<br />
                                             When Google or someone else finds a solution for this, it will be fixed in this layout.
                                         </li>
-                                        <li>
-                                            IE has problems with 100% height of div inside div that has display:table-cell.<br />
-                                            This causes scrollbar to show up dirrectly under the content within the grid instead of nicely alligned at the bottom.
-                                        </li>
                                     </ul>
                                 </div>
                                 <hr />
                                 <div class="grid green padding dynamic">
                                     <h3>Dynamic width</h3>
                                     <div class="items-3" data-width="600">
-                                        <div><div><p>33.3%</p></div></div>
-                                        <div><div><p>33.3%</p></div></div>
-                                        <div><div><p>33.3%</p></div></div>
+                                        <div><p>33.3%</p></div>
+                                        <div><p>33.3%</p></div>
+                                        <div><p>33.3%</p></div>
                                     </div>
                                     <div class="items-2" data-width="500">
-                                        <div><div><p>50%</p></div></div>
-                                        <div><div><p>50%</p></div></div>
+                                        <div><p>50%</p></div>
+                                        <div><p>50%</p></div>
                                     </div>
                                 </div>
                                 <hr />
                                 <div class="grid default padding">
                                     <div class="items-1">
-                                        <div><div><p>100%</p></div></div>
+                                        <div><p>100%</p></div>
                                     </div>
                                     <div class="items-2 yellow">
-                                        <div><div><p>50%</p></div></div>
-                                        <div><div><p>50%</p></div></div>
+                                        <div><p>50%</p></div>
+                                        <div><p>50%</p></div>
                                     </div>
                                     <div class="items-3">
-                                        <div class="red"><div><p>33.3%</p></div></div>
-                                        <div class="blue"><div><p>33.3%</p></div></div>
-                                        <div class="green"><div>
-                                            <p>
-                                                33.3%<br />
-                                                Integer faucibus quam convallis ante luctus aliquam.
-                                            </p>
-                                        </div></div>
+                                        <div class="red"><p>33.3%</p></div>
+                                        <div class="blue"><p>33.3%</p></div>
+                                        <div class="green">
+                                            <p>33.3%<br />Integer faucibus quam convallis ante luctus aliquam.</p>
+                                        </div>
                                     </div>
                                     <div class="items-3">
-                                        <div><div><p>33.3%</p></div></div>
-                                        <div class="width-66"><div><p>66.6%</p></div></div>
+                                        <div><p>33.3%</p></div>
+                                        <div class="width-66"><p>66.6%</p></div>
                                     </div>
                                     <div class="items-4">
-                                        <div class="purple"><div><p>25%</p></div></div>
-                                        <div><div><p>25%</p></div></div>
-                                        <div><div>
+                                        <div class="purple"><p>25%</p></div>
+                                        <div><p>25%</p></div>
+                                        <div>
                                             <p>25%</p>
                                             <div class="img">
                                                 <img src="img/html5.png" class="padding orange fill-width" />
                                             </div>
-                                        </div></div>
-                                        <div><div>
+                                        </div>
+                                        <div>
                                             <h3>Hey</h3>
-                                            <p>
-                                                25%<br /><br />
-                                                In a mi vitae neque viverra venenatis in egestas diam. Sed in consequat nisl. Sed mattis, tellus sagittis pellentesque semper, leo nisi lacinia erat, quis tincidunt erat massa quis lacus.
-                                            </p>
-                                        </div></div>
+                                            <p>25%<br /><br />In a mi vitae neque viverra venenatis in egestas diam. Sed in consequat nisl. Sed mattis, tellus sagittis pellentesque semper, leo nisi lacinia erat, quis tincidunt erat massa quis lacus.</p>
+                                        </div>
                                     </div>
                                     <div class="items-4">
-                                        <div><div><p>25%</p></div></div>
-                                        <div><div><p>25%</p></div></div>
-                                        <div class="width-50"><div><p>50%</p></div></div>
+                                        <div><p>25%</p></div>
+                                        <div><p>25%</p></div>
+                                        <div class="width-50"><p>50%</p></div>
                                     </div>
                                     <div class="items-4">
-                                        <div><div><p>25%</p></div></div>
-                                        <div class="width-75"><div><p>75%</p></div></div>
+                                        <div><p>25%</p></div>
+                                        <div class="width-75"><p>75%</p></div>
                                     </div>
                                 </div>
                                 <hr />
@@ -249,7 +246,6 @@
                                 <div class="buttons">
                                     <input type="button" value="Button" />
                                 </div>
-                                <hr />
                                 <div class="box">
                                     <table>
                                         <thead>
@@ -272,56 +268,42 @@
                                 </div>
                                 <div class="grid default padding">
                                     <div class="items-1">
-                                        <div><div><p>100%</p></div></div>
+                                        <div><p>100%</p></div>
                                     </div>
                                     <div class="items-2 yellow">
-                                        <div><div><p>50%</p></div></div>
-                                        <div><div><p>50%</p></div></div>
+                                        <div><p>50%</p></div>
+                                        <div><p>50% a b c d e f g h i j k l m n o p q r s t u v x y z</p></div>
                                     </div>
                                     <div class="items-3">
-                                        <div class="red"><div><p>33.3%</p></div></div>
-                                        <div class="blue"><div><p>33.3%</p></div></div>
+                                        <div class="red"><p>33.3%</p></div>
+                                        <div class="blue"><p>33.3%</p></div>
                                         <div class="green">
-                                            <div>
-                                                <p>
-                                                    33.3%<br />
-                                                    Integer faucibus quam convallis ante luctus aliquam.
-                                                </p>
-                                            </div>
+                                            <p>33.3%<br />Integer faucibus quam convallis ante luctus aliquam.</p>
                                         </div>
                                     </div>
                                     <div class="items-3">
-                                        <div><div><p>33.3%</p></div></div>
-                                        <div class="width-66"><div><p>66.6%</p></div></div>
+                                        <div><p>33.3%</p></div>
+                                        <div class="width-66"><p>66.6%</p></div>
                                     </div>
                                     <div class="items-3">
-                                        <div class="purple"><div><p>33.3%</p></div></div>
+                                        <div class="purple"><p>33.3%</p></div>
                                         <div>
-                                            <div>
-                                                <p>33.3%</p>
-                                                <div class="img">
-                                                    <img src="img/html5.png" class="padding orange fill-width" />
-                                                </div>
-                                            </div>
+                                            <p>33.3%</p>
+                                            <img src="img/html5.png" class="padding orange fill-width" />
                                         </div>
                                         <div>
-                                            <div>
-                                                <h3>Hey</h3>
-                                                <p>
-                                                    33.3%<br /><br />
-                                                    In a mi vitae neque viverra venenatis in egestas diam. Sed in consequat nisl. Sed mattis, tellus sagittis pellentesque semper, leo nisi lacinia erat, quis tincidunt erat massa quis lacus.
-                                                </p>
-                                            </div>
+                                            <h3>Hey</h3>
+                                            <p>33.3%</p>
                                         </div>
                                     </div>
                                     <div class="items-4">
-                                        <div><div><p>25%</p></div></div>
-                                        <div><div><p>25%</p></div></div>
-                                        <div class="width-50"><div><p>50%</p></div></div>
+                                        <div><p>25%</p></div>
+                                        <div><p>25%</p></div>
+                                        <div class="width-50"><p>50%aewaefwefewfaewfefwewfwaefeawfewfewf</p></div>
                                     </div>
                                     <div class="items-4">
-                                        <div><div><p>25%</p></div></div>
-                                        <div class="width-75"><div><p>75%</p></div></div>
+                                        <div><p>25%</p></div>
+                                        <div class="width-75"><p>75%</p></div>
                                     </div>
                                 </div>
                                 <div class="box default padding">
