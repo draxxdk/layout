@@ -159,7 +159,7 @@ p.center {
 #page #middle .scroll {
   overflow-y: auto;
   overflow-x: hidden;
-  /* ensures firefox doesn't display horizontal scrollbar */
+  /* firefox needs this */
   width: 100%;
   height: 0;
   min-height: 100%;
@@ -191,6 +191,7 @@ p.center {
   display: block;
   overflow-x: auto;
   overflow-y: hidden;
+  /* firefox needs this */
 }
 #page #middle .scroll .box {
   margin: 10px;
@@ -221,7 +222,9 @@ p.center {
 #page #middle .scroll .box > p,
 #page #middle .scroll .grid > div > div > p {
   display: block;
-  overflow: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* firefox needs this */
 }
 #page #middle .scroll .grid {
   border: 5px solid #ffffff;

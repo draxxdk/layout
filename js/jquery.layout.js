@@ -16,7 +16,7 @@
         leftIsHidden,
         rightIsHidden,
         pageIsCenter,
-        windowMinWidth = 700,
+        windowMinWidth = 500,
         forcedHidden = false;
 
     updateLayout = function () {
