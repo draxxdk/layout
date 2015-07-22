@@ -78,8 +78,8 @@
 <li>Making div take up remaining browser window height / div container height</li>
 <li>Making div take up remaining browser window width / div container width</li>
 <li>Making completely dynamic grids that works and looks identical in all browser</li>
-<li>Making a layout in a way so it doesn't care if you remove sections from it (except for main content section).</li>
-<li>Making a layout that is not depending on JS to work. This layout uses JS for better media queries based on container width instead of browser window width and to toggle layout sections).</li>
+<li>Making a layout in a way so it doesn't care if you remove sections from it, except for main content section.</li>
+<li>Making a layout that is not depending on JS to work. This layout uses JS for better media queries based on container width instead of browser window width and to toggle layout sections.</li>
 <li>Making a layout that doesn't depend on float and calc() to work.</li>
 </ul>
 
