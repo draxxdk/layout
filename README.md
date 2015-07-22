@@ -69,7 +69,7 @@
             <td>The layout looks the same in Chrome, Firefox and IE, other then the scrollbars.</td>
         </tr>
         <tr>
-            <th>LESS CSS</th>
+            <th>LESS</th>
             <td>Stylesheets are all originally made in LESS and then converted to CSS with <a href="http://less2css.org/" target="_blank">http://less2css.org/</a>. All LESS files are included.</td>
         </tr>
     </tbody>
