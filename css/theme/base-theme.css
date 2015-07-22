@@ -1,11 +1,4 @@
-﻿::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #303030;
-}
-body {
+﻿body {
   color: #000000;
 }
 hr {
@@ -46,10 +39,6 @@ a {
   -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
-}
-#page #middle #left.small ::-webkit-scrollbar-thumb,
-#page #middle #right.small ::-webkit-scrollbar-thumb {
-  background-color: #cccccc;
 }
 #page #middle #left.small a,
 #page #middle #right.small a,
