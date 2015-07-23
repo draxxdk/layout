@@ -55,6 +55,6 @@
 #page #middle #left input[type=button].red:hover,
 #page #middle #center input[type=button].red:hover,
 #page #middle #right input[type=button].red:hover {
-  background-color: #e74c3c;
+  background-color: #e74c3c!important;
   color: #000;
 }

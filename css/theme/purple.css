@@ -55,6 +55,6 @@
 #page #middle #left input[type=button].purple:hover,
 #page #middle #center input[type=button].purple:hover,
 #page #middle #right input[type=button].purple:hover {
-  background-color: #af7ac4;
+  background-color: #af7ac4!important;
   color: #000;
 }
