@@ -1,4 +1,16 @@
-﻿*,
+﻿@font-face {
+  font-family: OpenSans;
+  src: url(../fonts/OpenSans-Regular.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: OpenSans;
+  font-weight:bold;
+  src: url(../fonts/OpenSans-Bold.ttf) format('opentype');
+}
+
+
+*,
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
@@ -9,7 +21,7 @@
   margin: 0;
   padding: 0;
   outline: 0;
-  font-family: Arial, sans-serif;
+  /*font-family: Arial, sans-serif;*/
 }
 h1,
 h2,
@@ -25,6 +37,7 @@ body {
 body {
   font-size: 100%;
   line-height: 1;
+  font-family: OpenSans, sans-serif;
 }
 a:hover {
   text-decoration: none;
